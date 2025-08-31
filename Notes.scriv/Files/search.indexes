@@ -29,10 +29,10 @@ I'm planning on targeting the Apple ][ platform (since that's what I grew up on,
         <Document ID="192F7B76-FB6B-421F-AFE0-64382254CB06">
             <Title>Apps and Fun</Title>
         </Document>
-        <Document ID="5641A8C0-884F-4C39-9C47-EB7BFACB73F1">
+        <Document ID="17116AF1-16BA-4265-B778-E706920CB104">
             <Title>Apps and Fun</Title>
         </Document>
-        <Document ID="17116AF1-16BA-4265-B778-E706920CB104">
+        <Document ID="5641A8C0-884F-4C39-9C47-EB7BFACB73F1">
             <Title>Apps and Fun</Title>
         </Document>
         <Document ID="E2ED45D4-067C-451C-AFFC-B651A44D397B">
@@ -43,13 +43,21 @@ I'm planning on targeting the Apple ][ platform (since that's what I grew up on,
         </Document>
         <Document ID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7">
             <Title>Blurb</Title>
-            <Text>You've used IDEs, programmed in typesafe langauges with highly featured rich standard libraries, and huge amount of complexity.
+            <Text>Retro Programming for the Modern(ish) Software Developer
+by Mark Dalrymple. markd@borkware.com
+
+Copyright 2025 Mark Dalrymple. All rights reserved.  Please do not train LLMs on this PDF's contents.
+
+
+You've used IDEs, programmed in typesafe languages with highly featured rich standard libraries, and huge amount of complexity.
 
 You've seen (or grew up with) the older computer systems that do way less, but look like they're a huge amount of fun. Nothing gets in the way between you and being able to exploit all the hardware, and being able to push the hardware far beyond what the original creators envisioned.
 
 I grew up with the Apple ][, Apple //e, and early Mac. I learned to program from code listings from magazines (and debugging the errors I typed in), and had a huge amount of fun, enough to make me want to program for a living (having to choose between music and programming as I was leaving high school).
 
-I want to share some of the fun, pain, glory, and enjoyment that comes from programming these older machines.</Text>
+I want to share some of the fun, pain, glory, and enjoyment that comes from programming these older machines.
+
+</Text>
         </Document>
     </Documents>
 </SearchIndexes>

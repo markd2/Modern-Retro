@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.4-16639" Device="squeakytoy2" Author="" Modified="2025-08-31 14:58:01 -0400" ModID="2C355DEE-CC7D-4F3E-A3DE-CF0C9DD24071">
+<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.4-16639" Device="squeakytoy2" Author="" Modified="2025-08-31 15:02:35 -0400" ModID="FAF42CD0-F1C4-49DD-9A96-38752C1D1EFA">
     <Binder>
         <BinderItem UUID="EEB95526-2598-43E6-870E-29423D12B7D5" Type="DraftFolder" Created="2023-07-06 20:40:59 -0400" Modified="2025-08-31 14:43:47 -0400">
             <Title>Retro Programming for the Moderin(ish) programmer</Title>
@@ -7,13 +7,13 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem UUID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7" Type="Text" Created="2025-08-31 14:43:30 -0400" Modified="2025-08-31 14:56:40 -0400">
+                <BinderItem UUID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7" Type="Text" Created="2025-08-31 14:43:30 -0400" Modified="2025-08-31 15:02:35 -0400">
                     <Title>Blurb</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>830,0</TextSelection>
+                        <TextSelection>199,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="A42F653A-5904-496D-B075-51A58730EA6C" Type="Text" Created="2025-08-31 14:45:08 -0400" Modified="2025-08-31 14:56:07 -0400">
@@ -159,11 +159,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2023-07-06 20:40:58 -0400" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2025-09-01 01:00:00 -0400" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="427" Characters="2496" Date="2025-08-31 14:57:01 -0400"/>
+        <PreviousSession Words="456" Characters="2698" Date="2025-08-31 14:57:01 -0400"/>
     </ProjectTargets>
     <RecentWritingHistory Date="2025-08-31 00:00:00 -0400">
-        <DraftWordCount>427</DraftWordCount>
-        <DraftCharCount>2496</DraftCharCount>
+        <DraftWordCount>456</DraftWordCount>
+        <DraftCharCount>2698</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
