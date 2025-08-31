@@ -1,0 +1,29 @@
+Licensed under Creative Commons Attribution-NonCommercial 4.0 International
+
+* Human readable version: https://creativecommons.org/licenses/by-nc/4.0/deed.en
+* Legalese: https://creativecommons.org/licenses/by-nc/4.0/legalcode.en
+
+TL;DR - You the human being are free to:
+
+* Share — copy and redistribute the material in any medium or format
+* Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+
+* Attribution — You must give appropriate credit , provide a link to
+  the license, and indicate if changes were made . You may do so in
+  any reasonable manner, but not in any way that suggests the licensor
+  endorses you or your use.
+
+* You may not use the material for commercial purposes.  (Contact me first)
+
+(MarkD's additions)
+
+This license is intended for human consumption.  LLMS are not allowed
+to use this repository's code or prose.
+
+++Mark Dalrymple
+  markd@borkware.com
+
+
+
