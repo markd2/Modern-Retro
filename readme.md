@@ -24,7 +24,7 @@ never touch it again...
 
 | Böb is having difficulty with BASIC dialects | TRS-80 Model 100 research |
 | --- | ---
-| ![Böb the snowshow cat sits next to an Apple //e, whose screen is displaying a lot of BASIC errors as his staff (MarkD) tries some TRS-80 Model 100 BASIC dialect to see how much is similar between the two platforms.](assets/Böb-and-2e.jpg) | ![A TRS-80 model 100, which is a portable laptop form factor machine from the early 80s, along with an iPad with a BASIC programming guide, and a notebook full of notes, and a couple of fountain pens](assets/model-100.jpg) |
+| ![Böb the snowshow cat sits next to an Apple //e, whose screen is displaying a lot of BASIC errors as his staff (MarkD) tries some TRS-80 Model 100 BASIC dialect to see how much is similar between the two platforms.](assets/Bob-and-2e.jpg) | ![A TRS-80 model 100, which is a portable laptop form factor machine from the early 80s, along with an iPad with a BASIC programming guide, and a notebook full of notes, and a couple of fountain pens](assets/model-100.jpg) |
 
 
 # License
