@@ -1,6 +1,6 @@
 # Retro Programming for the Modern(ish) Software Developer
 
-_(just want the book?  Get it here: [modern-retro.pdf](modern-retro.pdf)
+_(just want the book?  Get it here: [Modern Retro.pdf](Modern%20Retro.pdf))_
 
 You've used IDEs, programmed in typesafe langauges with highly
 featured rich standard libraries, and huge amount of complexity.
