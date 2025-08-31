@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.4-16639" Device="squeakytoy2" Author="" Modified="2025-08-31 14:43:58 -0400" ModID="B5852EA9-A501-4FF9-95BC-3CE4F8F6BDE0">
+<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.4-16639" Device="squeakytoy2" Author="" Modified="2025-08-31 14:58:01 -0400" ModID="2C355DEE-CC7D-4F3E-A3DE-CF0C9DD24071">
     <Binder>
         <BinderItem UUID="EEB95526-2598-43E6-870E-29423D12B7D5" Type="DraftFolder" Created="2023-07-06 20:40:59 -0400" Modified="2025-08-31 14:43:47 -0400">
             <Title>Retro Programming for the Moderin(ish) programmer</Title>
@@ -7,64 +7,56 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem UUID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7" Type="Text" Created="2025-08-31 14:43:30 -0400" Modified="2025-08-31 14:43:30 -0400">
+                <BinderItem UUID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7" Type="Text" Created="2025-08-31 14:43:30 -0400" Modified="2025-08-31 14:56:40 -0400">
+                    <Title>Blurb</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>0,0</TextSelection>
+                        <TextSelection>830,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="A42F653A-5904-496D-B075-51A58730EA6C" Type="Text" Created="2025-08-31 14:45:08 -0400" Modified="2025-08-31 14:56:07 -0400">
+                    <Title>Intro</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>1652,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="5641A8C0-884F-4C39-9C47-EB7BFACB73F1" Type="Text" Created="2024-07-07 17:19:38 -0400" Modified="2025-07-26 20:44:07 -0400">
                     <Title>Apple //</Title>
-                    <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                    </MetaData>
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                     <Children>
                         <BinderItem UUID="192F7B76-FB6B-421F-AFE0-64382254CB06" Type="Text" Created="2025-07-26 20:44:10 -0400" Modified="2025-07-26 20:44:51 -0400">
                             <Title>BASIC</Title>
-                            <MetaData>
-                                <IncludeInCompile>Yes</IncludeInCompile>
-                            </MetaData>
                             <TextSettings>
                                 <TextSelection>0,0</TextSelection>
                             </TextSettings>
                             <Children>
                                 <BinderItem UUID="FA23F07E-F8E3-433F-A965-2B7854A16AE2" Type="Text" Created="2025-07-26 20:44:55 -0400" Modified="2025-07-26 20:45:23 -0400">
                                     <Title>Basic for experienced developers</Title>
-                                    <MetaData>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                    </MetaData>
                                     <TextSettings>
                                         <TextSelection>0,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                                 <BinderItem UUID="A6436AC0-69B8-4453-8809-5DB68D89BBE1" Type="Text" Created="2025-07-26 20:44:59 -0400" Modified="2025-08-31 14:42:12 -0400">
                                     <Title>Guts of Applesoft</Title>
-                                    <MetaData>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                    </MetaData>
                                     <TextSettings>
                                         <TextSelection>14,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                                 <BinderItem UUID="27275F7D-EECF-459D-B021-606B3489E5AD" Type="Text" Created="2025-07-26 20:45:46 -0400" Modified="2025-07-26 20:45:54 -0400">
                                     <Title>Explain a one-or-two-liner</Title>
-                                    <MetaData>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                    </MetaData>
                                     <TextSettings>
                                         <TextSelection>0,0</TextSelection>
                                     </TextSettings>
                                 </BinderItem>
                                 <BinderItem UUID="17116AF1-16BA-4265-B778-E706920CB104" Type="Text" Created="2025-07-26 20:45:57 -0400" Modified="2025-07-26 20:46:00 -0400">
                                     <Title>Apps and Fun</Title>
-                                    <MetaData>
-                                        <IncludeInCompile>Yes</IncludeInCompile>
-                                    </MetaData>
                                     <TextSettings>
                                         <TextSelection>0,0</TextSelection>
                                     </TextSettings>
@@ -75,9 +67,6 @@
                 </BinderItem>
                 <BinderItem UUID="E2ED45D4-067C-451C-AFFC-B651A44D397B" Type="Text" Created="2025-07-26 20:47:14 -0400" Modified="2025-07-26 20:47:19 -0400">
                     <Title>Model 100</Title>
-                    <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                    </MetaData>
                     <TextSettings>
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
@@ -95,6 +84,24 @@
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
+            <Children>
+                <BinderItem UUID="C417C2E1-1D64-454A-8AF0-A63962EDD65E" Type="Text" Created="2025-08-31 14:44:22 -0400" Modified="2025-08-31 14:44:22 -0400">
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="B53D55DC-4710-4155-B95B-74EB19A284E3" Type="Text" Created="2025-08-31 14:51:50 -0400" Modified="2025-08-31 14:51:50 -0400">
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
         </BinderItem>
     </Binder>
     <Collections>
@@ -152,11 +159,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2023-07-06 20:40:58 -0400" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2025-09-01 01:00:00 -0400" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="3" Characters="14" Date="2025-08-31 14:43:27 -0400"/>
+        <PreviousSession Words="427" Characters="2496" Date="2025-08-31 14:57:01 -0400"/>
     </ProjectTargets>
     <RecentWritingHistory Date="2025-08-31 00:00:00 -0400">
-        <DraftWordCount>3</DraftWordCount>
-        <DraftCharCount>14</DraftCharCount>
+        <DraftWordCount>427</DraftWordCount>
+        <DraftCharCount>2496</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>

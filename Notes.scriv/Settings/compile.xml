@@ -3,6 +3,7 @@
     <ProjectSettings>
         <Content Scope="Included">
             <Filter State="Off" Exclude="No" Type="Label">
+                <CollectionID>08D6C867-3215-45C4-87DB-8B82B510E7AA</CollectionID>
                 <Label>-1</Label>
                 <Status>-1</Status>
             </Filter>
@@ -42,9 +43,6 @@
         <MetaData>
             <ProjectTitle>ZigNotes</ProjectTitle>
             <ProjectAbbreviatedTitle>ZigNotes</ProjectAbbreviatedTitle>
-            <Authors>
-                <Author Role="aut"></Author>
-            </Authors>
             <EbookLanguage>en</EbookLanguage>
             <FountainTitlePageMetaData>
                 <Value Key="Title"><![CDATA[<$projecttitle>]]></Value>
@@ -65,5 +63,7 @@
             </SectionLayouts>
         </Format>
     </FormatSettings>
-    <LastUsedFormats/>
+    <LastUsedFormats>
+        <Print>DEFAULT</Print>
+    </LastUsedFormats>
 </CompileSettings>
