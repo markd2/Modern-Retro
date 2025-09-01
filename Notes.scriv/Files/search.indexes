@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="A42F653A-5904-496D-B075-51A58730EA6C">
-            <Title>Intro</Title>
-            <Text>There's a bunch of different ways to program these older platforms. 
-
-You can go for the original experience, by finding or purchasing a retro system, such as a fully functioning Apple ][, and program on that.
-
-You can go for the original experience with conveniences, by purchasing a retro system, and add-on hardware that lets you use an SD card as floopy or a hard drive.  That way you don't need to source blank diskettes, and things generally get a lot more convenient by being able to download and use disk images.
-
-You can also go for the basic emulator route, which is free (or very low price depending on the emulator package you're using).  There are also super emulators (my term) for programs that will give you all sorts of telemetry about the machine as it runs (virtually) - examine RAM while running, take snapshots of memory, see visualizations of anything useful to a developer.
-
-I'm aiming for folks going the original-hardware or simple emulator route, to give the flavor of what it was like back in the day to program these beasties (especially as a hobbyist / amateur programming), along with the pain points involved. (debugger? what's that?  compiling, what's that?  type safety?  what's that?)  If you decide to write serious software for these platforms (whether to sell, or give away for bragging rights), you'll probably want more powerful tools to help you out.
-
-I'm planning on targeting the Apple ][ platform (since that's what I grew up on, from sixth grade through 10th grade until we got a 512K Mac for the household), and the TRS-80 Model 100 (a recent acquisition, but it's a delightful, if slow, portable computer)
-</Text>
-        </Document>
-        <Document ID="EEB95526-2598-43E6-870E-29423D12B7D5">
-            <Title>Retro Programming for the Moderin(ish) programmer</Title>
-        </Document>
-        <Document ID="A6436AC0-69B8-4453-8809-5DB68D89BBE1">
-            <Title>Guts of Applesoft</Title>
-            <Text>Bork bork bork</Text>
+        <Document ID="5641A8C0-884F-4C39-9C47-EB7BFACB73F1">
+            <Title>Apps and Fun</Title>
         </Document>
         <Document ID="27275F7D-EECF-459D-B021-606B3489E5AD">
             <Title>Apps and Fun</Title>
         </Document>
-        <Document ID="192F7B76-FB6B-421F-AFE0-64382254CB06">
-            <Title>Apps and Fun</Title>
+        <Document ID="3F4D8E6C-D92F-4752-B107-67106042FCF5">
+            <Title>Program Organization and Control Flow</Title>
+            <Text>
+	Functions.  Function Pointers. Methods.  RPC.  Recursion.   Indirection.  Such elegant solutions to many program organization design puzzles.  Oh, and the delicious kinds of control flow. for loops, while loops, do until.  tail recursion.
+
+In BASIC-land, you have a fairly robust amount of control flow options, even if they aren't quite as pretty as what you're used to.  There's GOTO (absolute branch), GOSUB (branch plus return, the closest you'll get for custom functions), FOR for doing loops with a changing numeric index, and IF for branching.  Many basics don't have an ELSE
+
+You may have heard "goto considered harmful".  Put that out of your mind, because GOTO is one of  your main sources of control flow when making runtime decisions
+</Text>
         </Document>
-        <Document ID="5641A8C0-884F-4C39-9C47-EB7BFACB73F1">
-            <Title>Apps and Fun</Title>
+        <Document ID="5CEC07BA-066E-4865-8D50-08B40A1A0DED">
+            <Title>Graphics</Title>
+            <Text>RGB images with 8 bits per red/green/blue channel.  Alpha compositing. Postscript drawing models with bezier paths, gaussian blur, and overwrought distorted glass effects. Gigantic screens with millions upon millions of pixels.  GPUs that can pump out 120 fps of immersive textured environments.  Those are all modern inventions.
+
+Back in the day, we had 1920 chonky pixels that could hold one of sixteen colors, our lo-res graphics.   36,120 smaller pixels in our hi-res graphics that could hold one of eight colors (with restrictions), with wild memory layouts if you wanted to interact with the bits and bytes directly.  VBL was also strangely absent on some systems (especially the apple // series) making it difficult to sync your graphics flicker-free with the scanning beam of the CRT.
+
+The scanning what of the what?
+
+</Text>
         </Document>
-        <Document ID="17116AF1-16BA-4265-B778-E706920CB104">
-            <Title>Apps and Fun</Title>
-        </Document>
-        <Document ID="E2ED45D4-067C-451C-AFFC-B651A44D397B">
-            <Title>Model 100</Title>
-        </Document>
-        <Document ID="FA23F07E-F8E3-433F-A965-2B7854A16AE2">
-            <Title>Apps and Fun</Title>
+        <Document ID="B95DC6DE-AA72-48C5-BD77-A2B21C0F862C">
+            <Title>IDEs of March</Title>
+            <Text>You're probably used to high quality stable IDEs like Visual Studio (code) or Android Studio, or move-in editors like emacs or the vi-family. 
+
+Editing code on the old machines typically was "move the cursor back, make your change, and retype the rest of the line" or "retype the entire line".  When machines started getting massive amounts of memory (like 128K), some editing utilities were added. But before then, LIST and retying lines was the thing to do.
+
+</Text>
         </Document>
         <Document ID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7">
             <Title>Blurb</Title>
@@ -58,6 +52,68 @@ I grew up with the Apple ][, Apple //e, and early Mac. I learned to program from
 I want to share some of the fun, pain, glory, and enjoyment that comes from programming these older machines.
 
 </Text>
+        </Document>
+        <Document ID="A6436AC0-69B8-4453-8809-5DB68D89BBE1">
+            <Title>Guts of Applesoft</Title>
+            <Text>Bork bork bork</Text>
+        </Document>
+        <Document ID="DF135008-0F2F-47C4-A2FC-F2C330002479">
+            <Title>Data Structures</Title>
+            <Text>You're probably used to having a rich set of data structures available.  Arrays.  Dictionaries / Maps. And what you don't have you can create your own through structures and objects.
+
+In BASIC.  You have three data structures:
+* numbers
+* strings
+* arrays
+
+And that's it.  You can have variables of different numeric types. You can have strings of characters (no longer than 255, though). And you can have uniform-typed arrays.
+
+Want a structure?  You'll need a small pile variables
+Want an array of structures?  You'll need several parallel arrays.
+
+So let's dig in to organizing data in BASIC
+</Text>
+        </Document>
+        <Document ID="192F7B76-FB6B-421F-AFE0-64382254CB06">
+            <Title>Apps and Fun</Title>
+        </Document>
+        <Document ID="E2ED45D4-067C-451C-AFFC-B651A44D397B">
+            <Title>Model 100</Title>
+        </Document>
+        <Document ID="17116AF1-16BA-4265-B778-E706920CB104">
+            <Title>Apps and Fun</Title>
+        </Document>
+        <Document ID="A42F653A-5904-496D-B075-51A58730EA6C">
+            <Title>Intro</Title>
+            <Text>There's a bunch of different ways to program these older platforms. 
+
+You can go for the original experience, by finding or purchasing a retro system, such as a fully functioning Apple ][, and program on that.
+
+You can go for the original experience with conveniences, by purchasing a retro system, and add-on hardware that lets you use an SD card as floopy or a hard drive.  That way you don't need to source blank diskettes, and things generally get a lot more convenient by being able to download and use disk images.
+
+You can also go for the basic emulator route, which is free (or very low price depending on the emulator package you're using).  There are also super emulators (my term) for programs that will give you all sorts of telemetry about the machine as it runs (virtually) - examine RAM while running, take snapshots of memory, see visualizations of anything useful to a developer.
+
+I'm aiming for folks going the original-hardware or simple emulator route, to give the flavor of what it was like back in the day to program these beasties (especially as a hobbyist / amateur programming), along with the pain points involved. (debugger? what's that?  compiling, what's that?  type safety?  what's that?)  If you decide to write serious software for these platforms (whether to sell, or give away for bragging rights), you'll probably want more powerful tools to help you out.
+
+I'm planning on targeting the Apple ][ platform (since that's what I grew up on, from sixth grade through 10th grade until we got a 512K Mac for the household), and the TRS-80 Model 100 (a recent acquisition, but it's a delightful, if slow, portable computer)
+</Text>
+        </Document>
+        <Document ID="EEB95526-2598-43E6-870E-29423D12B7D5">
+            <Title>Retro Programming for the Moderin(ish) programmer</Title>
+        </Document>
+        <Document ID="7B5497BA-11C3-47DF-9206-D96886461FBC">
+            <Title>Algorithms</Title>
+            <Text>Algorithms
+
+In addition to data structures, you're probably used to a rich set of algorithms.  Map. Filter. Min, Max,  Sorting, Searching.
+
+With 8K of ROM for BASIC, algorithms weren't on anyone's radar.  If you want to sort something, you got to bubble sort an array (or maybe use something fancy like a shell sort.). And don't forget, recursion isn't a thing.
+
+But there is a certain joy in knowing how the basic algorithms work at a visceral level by implementing them
+</Text>
+        </Document>
+        <Document ID="FA23F07E-F8E3-433F-A965-2B7854A16AE2">
+            <Title>Apps and Fun</Title>
         </Document>
     </Documents>
 </SearchIndexes>

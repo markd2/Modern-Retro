@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.4-16639" Device="squeakytoy2" Author="" Modified="2025-08-31 15:05:41 -0400" ModID="9351F299-481A-4604-8FA8-86CA49DEA3B3">
+<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.4-16639" Device="squeakytoy2" Author="" Modified="2025-09-01 15:33:04 -0400" ModID="69A688FC-91BB-4D7C-A5C4-46CE506BCA3D">
     <Binder>
         <BinderItem UUID="EEB95526-2598-43E6-870E-29423D12B7D5" Type="DraftFolder" Created="2023-07-06 20:40:59 -0400" Modified="2025-08-31 14:43:47 -0400">
             <Title>Retro Programming for the Moderin(ish) programmer</Title>
@@ -23,6 +23,65 @@
                     </MetaData>
                     <TextSettings>
                         <TextSelection>1652,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="B95DC6DE-AA72-48C5-BD77-A2B21C0F862C" Type="Text" Created="2025-09-01 15:30:36 -0400" Modified="2025-09-01 15:33:04 -0400">
+                    <Title>IDEs of March</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>461,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="DF135008-0F2F-47C4-A2FC-F2C330002479" Type="Text" Created="2025-09-01 15:15:31 -0400" Modified="2025-09-01 15:18:08 -0400">
+                    <Title>Data Structures</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>595,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="7B5497BA-11C3-47DF-9206-D96886461FBC" Type="Text" Created="2025-09-01 15:18:12 -0400" Modified="2025-09-01 15:20:00 -0400">
+                    <Title>Algorithms</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>472,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="3F4D8E6C-D92F-4752-B107-67106042FCF5" Type="Text" Created="2025-09-01 15:20:08 -0400" Modified="2025-09-01 15:24:44 -0400">
+                    <Title>Program Organization and Control Flow</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>748,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="5CEC07BA-066E-4865-8D50-08B40A1A0DED" Type="Text" Created="2025-09-01 15:24:48 -0400" Modified="2025-09-01 15:30:24 -0400">
+                    <Title>Graphics</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>826,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem UUID="94D5FC1E-44EA-4DFB-A8B8-029A495C48DB" Type="ResearchFolder" Created="2023-07-06 20:40:59 -0400" Modified="2023-07-06 20:40:59 -0400">
+            <Title>Research</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="E2ED45D4-067C-451C-AFFC-B651A44D397B" Type="Text" Created="2025-07-26 20:47:14 -0400" Modified="2025-07-26 20:47:19 -0400">
+                    <Title>Model 100</Title>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="5641A8C0-884F-4C39-9C47-EB7BFACB73F1" Type="Text" Created="2024-07-07 17:19:38 -0400" Modified="2025-07-26 20:44:07 -0400">
@@ -65,19 +124,7 @@
                         </BinderItem>
                     </Children>
                 </BinderItem>
-                <BinderItem UUID="E2ED45D4-067C-451C-AFFC-B651A44D397B" Type="Text" Created="2025-07-26 20:47:14 -0400" Modified="2025-07-26 20:47:19 -0400">
-                    <Title>Model 100</Title>
-                    <TextSettings>
-                        <TextSelection>0,0</TextSelection>
-                    </TextSettings>
-                </BinderItem>
             </Children>
-        </BinderItem>
-        <BinderItem UUID="94D5FC1E-44EA-4DFB-A8B8-029A495C48DB" Type="ResearchFolder" Created="2023-07-06 20:40:59 -0400" Modified="2023-07-06 20:40:59 -0400">
-            <Title>Research</Title>
-            <MetaData>
-                <IncludeInCompile>Yes</IncludeInCompile>
-            </MetaData>
         </BinderItem>
         <BinderItem UUID="850215C0-5EE2-42DA-9314-A7AD31CD8EAA" Type="TrashFolder" Created="2023-07-06 20:40:59 -0400" Modified="2023-07-06 20:40:59 -0400">
             <Title>Trash</Title>
@@ -158,12 +205,12 @@
     </StatusSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2023-07-06 20:40:58 -0400" IgnoreDeadline="Yes">0</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2025-09-01 01:00:00 -0400" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="456" Characters="2698" Date="2025-08-31 15:03:19 -0400"/>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2025-09-02 01:00:00 -0400" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="503" Characters="3102" Date="2025-09-01 15:14:18 -0400"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2025-08-31 00:00:00 -0400">
-        <DraftWordCount>456</DraftWordCount>
-        <DraftCharCount>2698</DraftCharCount>
+    <RecentWritingHistory Date="2025-09-01 00:00:00 -0400">
+        <DraftWordCount>503</DraftWordCount>
+        <DraftCharCount>3102</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
