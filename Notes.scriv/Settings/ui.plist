@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CompileFolder</key>
+	<string>/Users/markd/Desktop</string>
 	<key>NotesScaleFactor</key>
 	<real>1</real>
 	<key>binderSplitFrames</key>
@@ -86,6 +88,11 @@
 			<key>Row</key>
 			<integer>-1</integer>
 		</dict>
+		<key>F8214AF1-3160-43D5-BE60-CF4E7EC58302</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
 		<key>FA23F07E-F8E3-433F-A965-2B7854A16AE2</key>
 		<dict>
 			<key>Row</key>
@@ -129,7 +136,7 @@
 		<real>1</real>
 	</dict>
 	<key>mainWindowFrame</key>
-	<string>508 192 1246 665 0 0 2048 1127 </string>
+	<string>802 336 1246 665 0 0 2048 1127 </string>
 	<key>supportingDocumentEditor.dockedQRTextSettings</key>
 	<dict>
 		<key>textScaleFactor</key>

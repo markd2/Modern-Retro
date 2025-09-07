@@ -7,6 +7,14 @@
         <Document ID="27275F7D-EECF-459D-B021-606B3489E5AD">
             <Title>Apps and Fun</Title>
         </Document>
+        <Document ID="B95DC6DE-AA72-48C5-BD77-A2B21C0F862C">
+            <Title>IDEs of March</Title>
+            <Text>You're probably used to high quality stable IDEs like Visual Studio (code) or Android Studio, or move-in editors like emacs or the vi-family. 
+
+Editing code on the old machines typically was "move the cursor back, make your change, and retype the rest of the line" or "retype the entire line".  When machines started getting massive amounts of memory (like 128K), some editing utilities were added. But before then, LIST and retying lines was the thing to do.
+
+</Text>
+        </Document>
         <Document ID="3F4D8E6C-D92F-4752-B107-67106042FCF5">
             <Title>Program Organization and Control Flow</Title>
             <Text>
@@ -15,7 +23,8 @@
 In BASIC-land, you have a fairly robust amount of control flow options, even if they aren't quite as pretty as what you're used to.  There's GOTO (absolute branch), GOSUB (branch plus return, the closest you'll get for custom functions), FOR for doing loops with a changing numeric index, and IF for branching.  Many basics don't have an ELSE
 
 You may have heard "goto considered harmful".  Put that out of your mind, because GOTO is one of  your main sources of control flow when making runtime decisions
-</Text>
+
+You think you've seen spaghetti code?  It ain't nothing compared to the horrors you can make with GOTO. (include example horror)</Text>
         </Document>
         <Document ID="5CEC07BA-066E-4865-8D50-08B40A1A0DED">
             <Title>Graphics</Title>
@@ -24,14 +33,6 @@ You may have heard "goto considered harmful".  Put that out of your mind, becaus
 Back in the day, we had 1920 chonky pixels that could hold one of sixteen colors, our lo-res graphics.   36,120 smaller pixels in our hi-res graphics that could hold one of eight colors (with restrictions), with wild memory layouts if you wanted to interact with the bits and bytes directly.  VBL was also strangely absent on some systems (especially the apple // series) making it difficult to sync your graphics flicker-free with the scanning beam of the CRT.
 
 The scanning what of the what?
-
-</Text>
-        </Document>
-        <Document ID="B95DC6DE-AA72-48C5-BD77-A2B21C0F862C">
-            <Title>IDEs of March</Title>
-            <Text>You're probably used to high quality stable IDEs like Visual Studio (code) or Android Studio, or move-in editors like emacs or the vi-family. 
-
-Editing code on the old machines typically was "move the cursor back, make your change, and retype the rest of the line" or "retype the entire line".  When machines started getting massive amounts of memory (like 128K), some editing utilities were added. But before then, LIST and retying lines was the thing to do.
 
 </Text>
         </Document>
@@ -82,6 +83,37 @@ So let's dig in to organizing data in BASIC
         </Document>
         <Document ID="17116AF1-16BA-4265-B778-E706920CB104">
             <Title>Apps and Fun</Title>
+        </Document>
+        <Document ID="F8214AF1-3160-43D5-BE60-CF4E7EC58302">
+            <Title>over-arching ideas</Title>
+            <Text>* Learn BASIC *and* 6502 assembly at the same time.
+* Get introduced to something in BASIC, and then see something similar (if possible) in assembly. Or maybe related tangentally
+* aimed for experienced coders.  Won't cover the theory of what a variable, loop, function, etc is.  more on how 
+
+Good lord, why?
+* compare these specs of a modern laptop and a not-so-modern lappy
+#
+or about 7 orders of magnitude in the number of transistors, and a massive leap.
+
+But, programming the modern machines really isn't that much fun any more (at least for me).  You've got horrible IDEs, huge toolkits that take a lot of effort to start using, knowledge of a complex programming language with lots of sharp corners
+
+Where with BASIC, on the model 100 for example, I was able to use the cursor keys to move a little stick figure of a human being around on screen, and it only took about N lines of code:
+
+And that was *fun*.  The limited capacity of the machine's computational abilities, coupled with just how (relatively) slow they were and the rather paltry amount of storage, means that even if you wanted to, writing a large sprawling complex bloating program was kind of hard. You'd run out of resources (and patience) long before you were done unless you were extremely patient and organized.
+
+But little hacks?  Small programs to do exactly what you need?  smol games that are fun?  writing a two-liner to confuse and impress your friends?  so much fun.
+
+And so MarkD, why this odd trip down memory lane?  These were my formative years. Going from an 8-bit apple ][ to a 512 mac to unix machines to the computational monsters we have in our pockets and on our desktops.
+
+But I never really understood things back then. I was able to write some real software to help power my Dad's radiology and nuclear medicine departments (which was kind of scary in retrospect - a teenager writing a program to track radioactive isotopes). But now I know stuff.  I've worked on software big and small. I've swooped in on client projects for short stints, and have worked on a single piece of software for 15 years.
+
+Now I understand stuff - like how BASIC tokenized and stored its program. What soft-switches really are, and just how joyful and fun it is to program a machine that (if you wanted to) you could learn just about everything about it, all the way up and down its hardware and software stack.  Imagine trying to do that with modern Mac with xcode and Swift and SwiftUI.  Granted, you can do a whole lot more with that, with the accompanying increase in complexity, and removal from the actual technology that does the work. 
+
+So this pile of nonsense, assuming I actually ever finish it, will take you on a journey learning the high-level stuff (yay BASIC), the low-level stuff (yay 6502 assembly language) and the stuff in-between.  And sometimes might even give you some insight of how and why things work the way they do now.
+ 
+
+
+</Text>
         </Document>
         <Document ID="A42F653A-5904-496D-B075-51A58730EA6C">
             <Title>Intro</Title>

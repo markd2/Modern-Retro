@@ -54,7 +54,7 @@
             </MMDMetaData>
         </MetaData>
     </ProjectSettings>
-    <CurrentFileType>Print</CurrentFileType>
+    <CurrentFileType>pdf</CurrentFileType>
     <FormatSettings>
         <Format ID="DEFAULT">
             <SectionLayouts>
@@ -65,5 +65,6 @@
     </FormatSettings>
     <LastUsedFormats>
         <Print>DEFAULT</Print>
+        <pdf>DEFAULT</pdf>
     </LastUsedFormats>
 </CompileSettings>
