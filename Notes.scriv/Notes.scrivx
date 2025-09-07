@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.4-16639" Device="squeakytoy2" Author="" Modified="2025-09-07 09:00:25 -0400" ModID="61C9CB9F-A418-4E20-B75B-15035A3D379B">
+<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.4-16639" Device="squeakytoy2" Author="" Modified="2025-09-07 15:03:46 -0400" ModID="7D784945-6F81-4B90-A2A6-61FC51442B06">
     <Binder>
         <BinderItem UUID="EEB95526-2598-43E6-870E-29423D12B7D5" Type="DraftFolder" Created="2023-07-06 20:40:59 -0400" Modified="2025-08-31 14:43:47 -0400">
             <Title>Retro Programming for the Moderin(ish) programmer</Title>
@@ -13,7 +13,7 @@
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>199,0</TextSelection>
+                        <TextSelection>613,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="F8214AF1-3160-43D5-BE60-CF4E7EC58302" Type="Text" Created="2025-09-07 08:43:39 -0400" Modified="2025-09-07 08:58:36 -0400">
@@ -215,7 +215,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2023-07-06 20:40:58 -0400" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2025-09-08 01:00:00 -0400" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="530" Characters="3059" Date="2025-09-07 08:59:23 -0400"/>
+        <PreviousSession Words="530" Characters="3059" Date="2025-09-07 14:58:13 -0400"/>
     </ProjectTargets>
     <RecentWritingHistory Date="2025-09-07 00:00:00 -0400">
         <DraftWordCount>530</DraftWordCount>

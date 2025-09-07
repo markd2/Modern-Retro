@@ -26,15 +26,8 @@ You may have heard "goto considered harmful".  Put that out of your mind, becaus
 
 You think you've seen spaghetti code?  It ain't nothing compared to the horrors you can make with GOTO. (include example horror)</Text>
         </Document>
-        <Document ID="5CEC07BA-066E-4865-8D50-08B40A1A0DED">
-            <Title>Graphics</Title>
-            <Text>RGB images with 8 bits per red/green/blue channel.  Alpha compositing. Postscript drawing models with bezier paths, gaussian blur, and overwrought distorted glass effects. Gigantic screens with millions upon millions of pixels.  GPUs that can pump out 120 fps of immersive textured environments.  Those are all modern inventions.
-
-Back in the day, we had 1920 chonky pixels that could hold one of sixteen colors, our lo-res graphics.   36,120 smaller pixels in our hi-res graphics that could hold one of eight colors (with restrictions), with wild memory layouts if you wanted to interact with the bits and bytes directly.  VBL was also strangely absent on some systems (especially the apple // series) making it difficult to sync your graphics flicker-free with the scanning beam of the CRT.
-
-The scanning what of the what?
-
-</Text>
+        <Document ID="FA23F07E-F8E3-433F-A965-2B7854A16AE2">
+            <Title>Apps and Fun</Title>
         </Document>
         <Document ID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7">
             <Title>Blurb</Title>
@@ -144,8 +137,15 @@ With 8K of ROM for BASIC, algorithms weren't on anyone's radar.  If you want to 
 But there is a certain joy in knowing how the basic algorithms work at a visceral level by implementing them
 </Text>
         </Document>
-        <Document ID="FA23F07E-F8E3-433F-A965-2B7854A16AE2">
-            <Title>Apps and Fun</Title>
+        <Document ID="5CEC07BA-066E-4865-8D50-08B40A1A0DED">
+            <Title>Graphics</Title>
+            <Text>RGB images with 8 bits per red/green/blue channel.  Alpha compositing. Postscript drawing models with bezier paths, gaussian blur, and overwrought distorted glass effects. Gigantic screens with millions upon millions of pixels.  GPUs that can pump out 120 fps of immersive textured environments.  Those are all modern inventions.
+
+Back in the day, we had 1920 chonky pixels that could hold one of sixteen colors, our lo-res graphics.   36,120 smaller pixels in our hi-res graphics that could hold one of eight colors (with restrictions), with wild memory layouts if you wanted to interact with the bits and bytes directly.  VBL was also strangely absent on some systems (especially the apple // series) making it difficult to sync your graphics flicker-free with the scanning beam of the CRT.
+
+The scanning what of the what?
+
+</Text>
         </Document>
     </Documents>
 </SearchIndexes>
