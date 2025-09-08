@@ -28,7 +28,27 @@
 			<key>Row</key>
 			<integer>-1</integer>
 		</dict>
+		<key>2747472D-2002-4446-A36B-8C180BF5D091</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
 		<key>3F4D8E6C-D92F-4752-B107-67106042FCF5</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>443E71B3-99B9-474B-8E22-C77EBAAC56D5</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>4D28DF69-FDF3-4881-8CC1-6E2B34524237</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>50A32C9C-6329-42F2-BC99-3FF8062DABA5</key>
 		<dict>
 			<key>Row</key>
 			<integer>-1</integer>
@@ -154,7 +174,7 @@
 		<real>1</real>
 	</dict>
 	<key>mainDocumentEditor.scrollRect</key>
-	<string>{{0, 0}, {719, 551}}</string>
+	<string>{{0, 70}, {719, 551}}</string>
 	<key>mainDocumentEditor.textEditorState</key>
 	<dict>
 		<key>textScaleFactor</key>

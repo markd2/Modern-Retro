@@ -203,6 +203,34 @@
 <p class="itemText">How stuff is represented in memory after tokenization, as well as runtime - how arrays and strings are represented, as well as gosub stack frames, and for loop overhead.</span></p></p>
 <p class="itemText"><p class="p1"><span class="s1"></p>
 </li>
+<li>
+<p class="topLevelItemTitle">Strings</p>
+<p class="itemText">Strings in BASIC are pretty much "pascal strings" - length byte.<span class="Apple-converted-space">  </span>They're also the only garbage collected data structure.<span class="Apple-converted-space">  </span>need more than 237 characters (which I think is the max in Applesoft), then you'll need to do more work. (and I'll need to figure out how to do that)</span></p></p>
+<p class="itemText"><p class="p2"><span class="s1"></span><br></p></p>
+<p class="itemText"><p class="p1"><span class="s1">in assembly-ville, it's totally up to you.<span class="Apple-converted-space">  </span>need to see what things like COUT want.<span class="Apple-converted-space">  </span>But if you want C-strings and spend your precious CPU cycles scanning over it to determine length, go ahead.<span class="Apple-converted-space">  </span>Or maybe two-bytes length (wast...</p>
+</li>
+<li>
+<p class="topLevelItemTitle">Bank Switching</p>
+<p class="itemText">The //e family introduced a card that not only gave you EIGHTY COLUMNS of text (luxury), the majority of the cards sold had an extra 64K of memory. DOUBLING the amount of memory. You'll never run out of memory now.<span class="Apple-converted-space">  </span>and there were also other Solutions that could get you up to 128K.<span class="Apple-converted-space">  </span>These days I think folks have tricked out //s with a megabyte of memory. holy hand grenades batman, that is out of this world.</span></p></p>
+<p class="itemText"><p class="p2"><span class="s1"></span><br></p></p>
+<p class="itemText"><p class="p1"><span class="s1">It uses bank-switching (learn and describe)</span></p></p>
+<p class="itemText"><p class="p2"><span class="s1"></span><br></p></p>
+<p class="itemText"><p class="p1"><span class="s1">You can't really take advantage of that in ...</p>
+</li>
+<li>
+<p class="topLevelItemTitle">Robust Software</p>
+<p class="itemText">Even though there's not much memory or speed, it's still nice having reliable bullet-proof software.<span class="Apple-converted-space">  </span>At the time, many (most) programmers were skilled amateurs who never touched a mainframe or a VAX, and the users of a lot of the software were not programmers at all.<span class="Apple-converted-space">  </span>"turn key" systems were common - put in a disk, and now you're in the environment of the application.<span class="Apple-converted-space">  </span>(consistent UI was still a thing that wouldn't occur for a bunch of years)</span></p></p>
+<p class="itemText"><p class="p2"><span class="s1"></span><br></p></p>
+<p class="itemText"><p class="p1"><span class="s1">You can write software, even in BASIC, that does er...</p>
+</li>
+<li>
+<p class="topLevelItemTitle">Kinds of programming</p>
+<p class="itemText">BASIC is amenable to a seat-of-your-pants software development style. Just keep having fun hacking at stuff until it works.</span></p></p>
+<p class="itemText"><p class="p2"><span class="s1"></span><br></p></p>
+<p class="itemText"><p class="p1"><span class="s1">Some folks liked to design their code, sometimes in their head, sometimes on paper. Flowcharts were a thing.</span></p></p>
+<p class="itemText"><p class="p2"><span class="s1"></span><br></p></p>
+<p class="itemText"><p class="p1"><span class="s1">Also, different approaches - top-down (more abstract, then figure out specifics to implement it) and bottom-up (collect a bunch of tools, then assemble).<span class="Apple-converted-space">  </span>Procedural programming is similar, breaking your software into a series of ~~functions~~ subroutines that you ...</p>
+</li>
 </ul>
 
 </td>

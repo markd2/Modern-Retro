@@ -8,5 +8,6 @@
     <Day dwc="139" dcc="890" dtwc="777" owc="0" occ="0" dtcc="4992">2023-07-26</Day>
     <Day dwc="456" dcc="2698" dtwc="453" owc="0" occ="0" dtcc="2684">2025-08-31</Day>
     <Day dwc="503" dcc="3102" dtwc="956" owc="0" occ="0" dtcc="5786">2025-09-01</Day>
-    <Day dwc="886" dcc="5137" owc="0" occ="0">2025-09-07</Day>
+    <Day dwc="886" dcc="5137" dtwc="1842" owc="0" occ="0" dtcc="10923">2025-09-07</Day>
+    <Day dwc="599" dcc="3596" owc="0" occ="0">2025-09-08</Day>
 </WritingHistory>

@@ -1,0 +1,16 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Palatino-Roman;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\pard\tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\sl264\slmult1\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 BASIC is amenable to a seat-of-your-pants software development style. Just keep having fun hacking at stuff until it works.\
+\
+Some folks liked to design their code, sometimes in their head, sometimes on paper. Flowcharts were a thing.\
+\
+Also, different approaches - top-down (more abstract, then figure out specifics to implement it) and bottom-up (collect a bunch of tools, then assemble).  Procedural programming is similar, breaking your software into a series of ~~functions~~ subroutines that you then compose for your final code.\
+\
+Object-orientation, in basic (unless you have a dialect that supports it) is pretty much right-out. There's no direct support for the indirection necessary for inheritance and polymorphism.  (even being able to ON X GOSUB VARNAME would have gone a long way, but alas you have to hardcode line numbers)\
+\
+Now, in assembly land, you can do anything.  For object-orientation, you'd have a table of "function pointers", even though they're not really functions.  You'd index into it, and JSR to that location.  An "object" can burn 2 bytes for a pointer to that jump table (and would have other metadata like superclass).  The other indexed indirect addressing mode is really useful for dealing with these kinds of things.\
+}

@@ -14,6 +14,13 @@ The scanning what of the what?
         <Document ID="E2ED45D4-067C-451C-AFFC-B651A44D397B">
             <Title>Model 100</Title>
         </Document>
+        <Document ID="50A32C9C-6329-42F2-BC99-3FF8062DABA5">
+            <Title>Strings</Title>
+            <Text>Strings in BASIC are pretty much "pascal strings" - length byte.  They're also the only garbage collected data structure.  need more than 237 characters (which I think is the max in Applesoft), then you'll need to do more work. (and I'll need to figure out how to do that)
+
+in assembly-ville, it's totally up to you.  need to see what things like COUT want.  But if you want C-strings and spend your precious CPU cycles scanning over it to determine length, go ahead.  Or maybe two-bytes length (wasteful of a precious byte), but that will let you have a string that spans the entirety of memory.  Plus maybe use bank-switching
+</Text>
+        </Document>
         <Document ID="EEB95526-2598-43E6-870E-29423D12B7D5">
             <Title>Retro Programming for the Moderin(ish) programmer</Title>
         </Document>
@@ -32,7 +39,8 @@ Want a structure?  You'll need a small pile variables
 Want an array of structures?  You'll need several parallel arrays.
 
 So let's dig in to organizing data in BASIC
-</Text>
+
+In assembly, the "pointer plus offset" addressing mode was made for creating structures.</Text>
         </Document>
         <Document ID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7">
             <Title>Blurb</Title>
@@ -127,6 +135,9 @@ You can also go for the basic emulator route, which is free (or very low price d
 I'm aiming for folks going the original-hardware or simple emulator route, to give the flavor of what it was like back in the day to program these beasties (especially as a hobbyist / amateur programming), along with the pain points involved. (debugger? what's that?  compiling, what's that?  type safety?  what's that?)  If you decide to write serious software for these platforms (whether to sell, or give away for bragging rights), you'll probably want more powerful tools to help you out.
 
 I'm planning on targeting the Apple ][ platform (since that's what I grew up on, from sixth grade through 10th grade until we got a 512K Mac for the household), and the TRS-80 Model 100 (a recent acquisition, but it's a delightful, if slow, portable computer)
+
+OBTW, currently the chapters are in no real order.
+
 </Text>
         </Document>
         <Document ID="17116AF1-16BA-4265-B778-E706920CB104">
@@ -149,6 +160,22 @@ PR#1, sending ascii.  serial configuration.  control codes.  Postscript? What's 
         <Document ID="27275F7D-EECF-459D-B021-606B3489E5AD">
             <Title>Apps and Fun</Title>
         </Document>
+        <Document ID="FA23F07E-F8E3-433F-A965-2B7854A16AE2">
+            <Title>Apps and Fun</Title>
+        </Document>
+        <Document ID="4D28DF69-FDF3-4881-8CC1-6E2B34524237">
+            <Title>Kinds of programming</Title>
+            <Text>BASIC is amenable to a seat-of-your-pants software development style. Just keep having fun hacking at stuff until it works.
+
+Some folks liked to design their code, sometimes in their head, sometimes on paper. Flowcharts were a thing.
+
+Also, different approaches - top-down (more abstract, then figure out specifics to implement it) and bottom-up (collect a bunch of tools, then assemble).  Procedural programming is similar, breaking your software into a series of ~~functions~~ subroutines that you then compose for your final code.
+
+Object-orientation, in basic (unless you have a dialect that supports it) is pretty much right-out. There's no direct support for the indirection necessary for inheritance and polymorphism.  (even being able to ON X GOSUB VARNAME would have gone a long way, but alas you have to hardcode line numbers)
+
+Now, in assembly land, you can do anything.  For object-orientation, you'd have a table of "function pointers", even though they're not really functions.  You'd index into it, and JSR to that location.  An "object" can burn 2 bytes for a pointer to that jump table (and would have other metadata like superclass).  The other indexed indirect addressing mode is really useful for dealing with these kinds of things.
+</Text>
+        </Document>
         <Document ID="DFCEFD8B-828D-485A-AC8C-DB2201021917">
             <Title>Audio</Title>
             <Text>Different retro systems had wildly different audio. Like the Model 100 has BASIC commands for doing Music. The C64 had the SID(?) chip that could do (audio information).
@@ -158,8 +185,19 @@ The Apple // had a speaker that can ... click.
 That's it.  To make sounds, you make the speaker click at different rates.
 </Text>
         </Document>
-        <Document ID="FA23F07E-F8E3-433F-A965-2B7854A16AE2">
-            <Title>Apps and Fun</Title>
+        <Document ID="443E71B3-99B9-474B-8E22-C77EBAAC56D5">
+            <Title>Bank Switching</Title>
+            <Text>The //e family introduced a card that not only gave you EIGHTY COLUMNS of text (luxury), the majority of the cards sold had an extra 64K of memory. DOUBLING the amount of memory. You'll never run out of memory now.  and there were also other Solutions that could get you up to 128K.  These days I think folks have tricked out //s with a megabyte of memory. holy hand grenades batman, that is out of this world.
+
+It uses bank-switching (learn and describe)
+
+You can't really take advantage of that in BASIC-land, everything is pretty much nailed down in-place, and bank-switching out chunks of that are not good for the health of your program.
+
+in assembly land, there are some ROM routines that'll copy a block of memory from main memory to the auxiliary memory, plus you can toggle the soft switches to move things around.
+
+(project, recreate Appleworks)
+
+</Text>
         </Document>
         <Document ID="5641A8C0-884F-4C39-9C47-EB7BFACB73F1">
             <Title>Apps and Fun</Title>
@@ -186,6 +224,13 @@ I'm going to be using DOS 3.3 and ignoring ProDOS.  If you're running a IIgs, yo
         <Document ID="5C086951-837A-4440-86A3-CCD59365A5F9">
             <Title>Basic Guts</Title>
             <Text>How stuff is represented in memory after tokenization, as well as runtime - how arrays and strings are represented, as well as gosub stack frames, and for loop overhead.
+</Text>
+        </Document>
+        <Document ID="2747472D-2002-4446-A36B-8C180BF5D091">
+            <Title>Robust Software</Title>
+            <Text>Even though there's not much memory or speed, it's still nice having reliable bullet-proof software.  At the time, many (most) programmers were skilled amateurs who never touched a mainframe or a VAX, and the users of a lot of the software were not programmers at all.  "turn key" systems were common - put in a disk, and now you're in the environment of the application.  (consistent UI was still a thing that wouldn't occur for a bunch of years)
+
+You can write software, even in BASIC, that does error checking of input, error checking of disk I/O, as well has tricks for improving performance (often at the expense of software readability) by placing variables and subroutines at specific places in your program.
 </Text>
         </Document>
     </Documents>
