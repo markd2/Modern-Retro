@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
+        <Document ID="7C28AFB4-EAD8-49D6-8C23-92A97F721015">
+            <Title>source code control</Title>
+            <Text>Source code control. What's that?  It's hard to imagine, but there was a time where ubiquitous source code control wasn't the norm.  Only professional shops did that, and sometimes they didn't use tools like git - they would have a cronjob that would tar everything up and put it in /tmp.
+
+(translation - an automated process, driven by time, say every hour, would archive a shared directory of code and then put it into a temporary directory.) maybe the archive would get saved to another disk or sent to tape.  Wanted to rollback a change?  You'd need to go to one of the recent archives, extract your file, and then copy it into the directory hierarchy.  This may sound terrible, but I actually encountered this in a team at a Big Wallstreet Firm that made a toolkit of high-performance networking that was used to get current stock value from the exchanges in the early 90s)
+
+For things like the programs that we write, source control is saving under different names and making copies of floppies.  There were no diff tools, so you couldn't really tell what the difference between two programs were.
+
+(research note - see if there were any source tools and diffing available)
+</Text>
+        </Document>
         <Document ID="5CEC07BA-066E-4865-8D50-08B40A1A0DED">
             <Title>Graphics</Title>
             <Text>RGB images with 8 bits per red/green/blue channel.  Alpha compositing. Postscript drawing models with bezier paths, gaussian blur, and overwrought distorted glass effects. Gigantic screens with millions upon millions of pixels.  GPUs that can pump out 120 fps of immersive textured environments.  Those are all modern inventions.
