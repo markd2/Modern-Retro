@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.4-16639" Device="squeakytoy2" Author="" Modified="2025-09-09 11:13:31 -0400" ModID="EFBDAAAF-73AE-4CA9-95DA-460684A355B0">
+<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.4-16639" Device="squeakytoy2" Author="" Modified="2025-09-19 08:43:50 -0400" ModID="A4B29A58-111A-4CDF-9E81-A05FF9E637D6">
     <Binder>
         <BinderItem UUID="EEB95526-2598-43E6-870E-29423D12B7D5" Type="DraftFolder" Created="2023-07-06 20:40:59 -0400" Modified="2025-08-31 14:43:47 -0400">
             <Title>Retro Programming for the Moderin(ish) programmer</Title>
@@ -108,13 +108,13 @@
                         <TextSelection>294,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="C515E0AE-12CB-471B-A9A5-CF29C326360E" Type="Text" Created="2025-09-07 15:09:24 -0400" Modified="2025-09-07 15:14:42 -0400">
+                <BinderItem UUID="C515E0AE-12CB-471B-A9A5-CF29C326360E" Type="Text" Created="2025-09-07 15:09:24 -0400" Modified="2025-09-19 08:43:50 -0400">
                     <Title>File I/O</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>941,0</TextSelection>
+                        <TextSelection>967,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="9AAE9019-2C23-4AC6-8773-AE4EAD1A3A1A" Type="Text" Created="2025-09-07 15:14:51 -0400" Modified="2025-09-07 15:16:47 -0400">
@@ -169,6 +169,15 @@
                     </MetaData>
                     <TextSettings>
                         <TextSelection>630,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="8A923DAD-19A5-4724-B83B-FE18F2879B24" Type="Text" Created="2025-09-19 08:37:13 -0400" Modified="2025-09-19 08:39:45 -0400">
+                    <Title>Performance</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>514,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
             </Children>
@@ -306,12 +315,12 @@
     </StatusSettings>
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2023-07-06 20:40:58 -0400" IgnoreDeadline="Yes">0</DraftTarget>
-        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2025-09-10 01:00:00 -0400" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="202" Characters="1180" Date="2025-09-09 09:57:16 -0400"/>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2025-09-20 01:00:00 -0400" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
+        <PreviousSession Words="88" Characters="541" Date="2025-09-19 08:36:48 -0400"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2025-09-09 00:00:00 -0400">
-        <DraftWordCount>202</DraftWordCount>
-        <DraftCharCount>1180</DraftCharCount>
+    <RecentWritingHistory Date="2025-09-19 00:00:00 -0400">
+        <DraftWordCount>88</DraftWordCount>
+        <DraftCharCount>541</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
