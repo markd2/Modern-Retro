@@ -253,7 +253,14 @@ Example program: Animals
         <Document ID="5C086951-837A-4440-86A3-CCD59365A5F9">
             <Title>Basic Guts</Title>
             <Text>How stuff is represented in memory after tokenization, as well as runtime - how arrays and strings are represented, as well as gosub stack frames, and for loop overhead.
-</Text>
+
+What's kind of amusing in retrospect, is that the primary way these old, resource constrained, slow machines were programmed was an additional layer of indirection going through the BASIC interpreter. Thereby making them even slower!
+
+Tokenization was one way that the basic implementation (all 10K (verify) of it) helped compact more code into less space.  Takes the line of code, replaces keywords with single byte tokens, thereby freeing up gobs of space. "PRINT" is five bytes of characters, but is a single token.  (c.f. Inside the Apple //e)
+
+How Applesoft stores variables is a great example at packing in data.  (insert diagram, etc) . For example, variables have two bytes for their name (or a zero byte for a one-character name). Because ASCII only needs 7 bits, that means the high bit is available.
+
+There's four types (real, integer, string, function), and there's two bits free (high bit of the first and second character of the variable name), which gives four values.  The type of the variable is encoded by bits.  Like reals have both high bits off, functions have both high bits on.  strings and integers have one bit on and one bit off.    (c.f. Inside the Apple //e)</Text>
         </Document>
         <Document ID="2747472D-2002-4446-A36B-8C180BF5D091">
             <Title>Robust Software</Title>
