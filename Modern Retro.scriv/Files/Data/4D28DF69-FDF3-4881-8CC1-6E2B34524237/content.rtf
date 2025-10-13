@@ -13,4 +13,8 @@ Also, different approaches - top-down (more abstract, then figure out specifics 
 Object-orientation, in basic (unless you have a dialect that supports it) is pretty much right-out. There's no direct support for the indirection necessary for inheritance and polymorphism.  (even being able to ON X GOSUB VARNAME would have gone a long way, but alas you have to hardcode line numbers)\
 \
 Now, in assembly land, you can do anything.  For object-orientation, you'd have a table of "function pointers", even though they're not really functions.  You'd index into it, and JSR to that location.  An "object" can burn 2 bytes for a pointer to that jump table (and would have other metadata like superclass).  The other indexed indirect addressing mode is really useful for dealing with these kinds of things.\
+\
+----\
+\
+In graphics, it can be faster to redraw in black rather than erase the screen - be very careful with the pixels that change, and don't change pixels that don't need changing.  (especially with sparse line / vector type  graphics)\
 }

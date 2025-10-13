@@ -35,6 +35,17 @@ in assembly-ville, it's totally up to you.  need to see what things like COUT wa
         <Document ID="EEB95526-2598-43E6-870E-29423D12B7D5">
             <Title>Retro Programming for the Moderin(ish) programmer</Title>
         </Document>
+        <Document ID="8A923DAD-19A5-4724-B83B-FE18F2879B24">
+            <Title>Performance</Title>
+            <Text>How different BASIC constructs can affect overall performance.
+
+c.f. Casey Muratori's interview with jetbrains, about knowing "how does this CPU like things, and then program in a way so that it gives stuff to the CPU appropriately"
+
+Get in to the guts of how of basic interprets the tokenized stream, and how you can arrange code (e.g. forward goto vs backward, lower line numbers with frequently hit code, etc)
+
+would be cool getting some kind of "obvious looking but pathological case" strawbork to tear apart.
+</Text>
+        </Document>
         <Document ID="DF135008-0F2F-47C4-A2FC-F2C330002479">
             <Title>Data Structures</Title>
             <Text>You're probably used to having a rich set of data structures available.  Arrays.  Dictionaries / Maps. And what you don't have you can create your own through structures and objects.
@@ -52,17 +63,6 @@ Want an array of structures?  You'll need several parallel arrays.
 So let's dig in to organizing data in BASIC
 
 In assembly, the "pointer plus offset" addressing mode was made for creating structures.</Text>
-        </Document>
-        <Document ID="8A923DAD-19A5-4724-B83B-FE18F2879B24">
-            <Title>Performance</Title>
-            <Text>How different BASIC constructs can affect overall performance.
-
-c.f. Casey Muratori's interview with jetbrains, about knowing "how does this CPU like things, and then program in a way so that it gives stuff to the CPU appropriately"
-
-Get in to the guts of how of basic interprets the tokenized stream, and how you can arrange code (e.g. forward goto vs backward, lower line numbers with frequently hit code, etc)
-
-would be cool getting some kind of "obvious looking but pathological case" strawbork to tear apart.
-</Text>
         </Document>
         <Document ID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7">
             <Title>Blurb</Title>
@@ -196,6 +196,10 @@ Also, different approaches - top-down (more abstract, then figure out specifics 
 Object-orientation, in basic (unless you have a dialect that supports it) is pretty much right-out. There's no direct support for the indirection necessary for inheritance and polymorphism.  (even being able to ON X GOSUB VARNAME would have gone a long way, but alas you have to hardcode line numbers)
 
 Now, in assembly land, you can do anything.  For object-orientation, you'd have a table of "function pointers", even though they're not really functions.  You'd index into it, and JSR to that location.  An "object" can burn 2 bytes for a pointer to that jump table (and would have other metadata like superclass).  The other indexed indirect addressing mode is really useful for dealing with these kinds of things.
+
+----
+
+In graphics, it can be faster to redraw in black rather than erase the screen - be very careful with the pixels that change, and don't change pixels that don't need changing.  (especially with sparse line / vector type  graphics)
 </Text>
         </Document>
         <Document ID="DFCEFD8B-828D-485A-AC8C-DB2201021917">
