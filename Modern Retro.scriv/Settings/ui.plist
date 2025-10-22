@@ -88,6 +88,11 @@
 			<key>Row</key>
 			<integer>-1</integer>
 		</dict>
+		<key>9E92B100-A9A6-4313-A094-ED2EBD697A39</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
 		<key>A42F653A-5904-496D-B075-51A58730EA6C</key>
 		<dict>
 			<key>Row</key>
@@ -184,14 +189,14 @@
 		<real>1</real>
 	</dict>
 	<key>mainDocumentEditor.scrollRect</key>
-	<string>{{0, 127}, {719, 547}}</string>
+	<string>{{0, 0}, {719, 547}}</string>
 	<key>mainDocumentEditor.textEditorState</key>
 	<dict>
 		<key>textScaleFactor</key>
 		<real>1</real>
 	</dict>
 	<key>mainWindowFrame</key>
-	<string>641 435 1246 665 0 0 2048 1127 </string>
+	<string>591 462 1246 665 0 0 2048 1127 </string>
 	<key>supportingDocumentEditor.dockedQRTextSettings</key>
 	<dict>
 		<key>textScaleFactor</key>
