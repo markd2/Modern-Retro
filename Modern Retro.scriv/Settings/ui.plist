@@ -8,8 +8,8 @@
 	<real>1</real>
 	<key>binderSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {265, 637}}</string>
-		<string>{{266, 0}, {980, 637}}</string>
+		<string>{{0, 0}, {265, 906}}</string>
+		<string>{{266, 0}, {1055, 906}}</string>
 	</array>
 	<key>bookmarksSelectionInfo</key>
 	<dict>
@@ -54,6 +54,11 @@
 			<integer>-1</integer>
 		</dict>
 		<key>5641A8C0-884F-4C39-9C47-EB7BFACB73F1</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>582D65CD-CCA1-4039-953B-8D12FF3CCF43</key>
 		<dict>
 			<key>Row</key>
 			<integer>-1</integer>
@@ -178,8 +183,8 @@
 	</dict>
 	<key>inspectorSplitFrames</key>
 	<array>
-		<string>{{0, 0}, {734, 607}}</string>
-		<string>{{735, 0}, {245, 607}}</string>
+		<string>{{0, 0}, {809, 876}}</string>
+		<string>{{810, 0}, {245, 876}}</string>
 	</array>
 	<key>inspectorWidth</key>
 	<real>245</real>
@@ -189,14 +194,14 @@
 		<real>1</real>
 	</dict>
 	<key>mainDocumentEditor.scrollRect</key>
-	<string>{{0, 0}, {719, 547}}</string>
+	<string>{{0, 122}, {794, 816}}</string>
 	<key>mainDocumentEditor.textEditorState</key>
 	<dict>
 		<key>textScaleFactor</key>
 		<real>1</real>
 	</dict>
 	<key>mainWindowFrame</key>
-	<string>591 462 1246 665 0 0 2048 1127 </string>
+	<string>403 193 1321 934 0 0 2048 1127 </string>
 	<key>supportingDocumentEditor.dockedQRTextSettings</key>
 	<dict>
 		<key>textScaleFactor</key>
