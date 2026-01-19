@@ -82,15 +82,11 @@ I want to share some of the fun, pain, glory, and enjoyment that comes from prog
 
 </Text>
         </Document>
-        <Document ID="7B5497BA-11C3-47DF-9206-D96886461FBC">
-            <Title>Algorithms</Title>
-            <Text>Algorithms
+        <Document ID="9E92B100-A9A6-4313-A094-ED2EBD697A39">
+            <Title>Memory</Title>
+            <Text>Memory, you have none :-)
 
-In addition to data structures, you're probably used to a rich set of algorithms.  Map. Filter. Min, Max,  Sorting, Searching.
-
-With 8K of ROM for BASIC, algorithms weren't on anyone's radar.  If you want to sort something, you got to bubble sort an array (or maybe use something fancy like a shell sort.). And don't forget, recursion isn't a thing.
-
-But there is a certain joy in knowing how the basic algorithms work at a visceral level by implementing them
+real vs virtual memory
 </Text>
         </Document>
         <Document ID="3F4D8E6C-D92F-4752-B107-67106042FCF5">
@@ -144,11 +140,15 @@ So this pile of nonsense, assuming I actually ever finish it, will take you on a
 
 </Text>
         </Document>
-        <Document ID="9E92B100-A9A6-4313-A094-ED2EBD697A39">
-            <Title>Memory</Title>
-            <Text>Memory, you have none :-)
+        <Document ID="7B5497BA-11C3-47DF-9206-D96886461FBC">
+            <Title>Algorithms</Title>
+            <Text>Algorithms
 
-real vs virtual memory
+In addition to data structures, you're probably used to a rich set of algorithms.  Map. Filter. Min, Max,  Sorting, Searching.
+
+With 8K of ROM for BASIC, algorithms weren't on anyone's radar.  If you want to sort something, you got to bubble sort an array (or maybe use something fancy like a shell sort.). And don't forget, recursion isn't a thing.
+
+But there is a certain joy in knowing how the basic algorithms work at a visceral level by implementing them
 </Text>
         </Document>
         <Document ID="A42F653A-5904-496D-B075-51A58730EA6C">

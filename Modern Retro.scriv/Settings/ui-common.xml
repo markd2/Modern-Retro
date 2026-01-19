@@ -16,7 +16,7 @@
     <Inspector Show="Yes" View="Notes">
         <ShowProjectBookmarks>No</ShowProjectBookmarks>
         <ShowSimilarTexts>No</ShowSimilarTexts>
-        <Collapse>CustomMetaData</Collapse>
+        <Collapse>Notes,CustomMetaData</Collapse>
         <FootnoteNumbers Prompt="No">No</FootnoteNumbers>
     </Inspector>
     <Split>None</Split>
