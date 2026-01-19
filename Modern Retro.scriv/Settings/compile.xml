@@ -12,6 +12,7 @@
             <RemoveComments>Yes</RemoveComments>
             <RemoveAnnotations>Yes</RemoveAnnotations>
             <ResampleImages DPI="72">No</ResampleImages>
+            <RemoveTrailingWhitespace>Yes</RemoveTrailingWhitespace>
             <ConvertTablesAndListToMMD>Yes</ConvertTablesAndListToMMD>
             <PDF>
                 <Cover Bleed="9.0" BleedUnits="pt"/>
@@ -43,6 +44,9 @@
         <MetaData>
             <ProjectTitle>Modern Retro</ProjectTitle>
             <ProjectAbbreviatedTitle>Modern Retro</ProjectAbbreviatedTitle>
+            <Authors>
+                <Author>Mark Dalrymple</Author>
+            </Authors>
             <EbookLanguage>en</EbookLanguage>
             <FountainTitlePageMetaData>
                 <Value Key="Title"><![CDATA[<$projecttitle>]]></Value>
