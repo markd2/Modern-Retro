@@ -62,6 +62,12 @@
                 <Type ID="76E56BF1-7717-4ED5-BC67-FFA2BB248CD5">TEXT-SECTION</Type>
             </SectionLayouts>
         </Format>
+        <Format ID="192100CE-886D-4910-8172-43CCC81B09A6">
+            <SectionLayouts>
+                <Type ID="B705378A-C1FD-408B-A090-9262270A325F">NEW-PAGE-HEADER-WITH-TEXT</Type>
+                <Type ID="76E56BF1-7717-4ED5-BC67-FFA2BB248CD5">TEXT-SECTION</Type>
+            </SectionLayouts>
+        </Format>
         <Format ID="3BFD9E68-6034-45C9-9380-B608D7DCF7D3">
             <SectionLayouts>
                 <Type ID="B705378A-C1FD-408B-A090-9262270A325F">NEW-PAGE-HEADER-WITH-TEXT</Type>
@@ -71,6 +77,6 @@
     </FormatSettings>
     <LastUsedFormats>
         <Print>DEFAULT</Print>
-        <pdf>3BFD9E68-6034-45C9-9380-B608D7DCF7D3</pdf>
+        <pdf>192100CE-886D-4910-8172-43CCC81B09A6</pdf>
     </LastUsedFormats>
 </CompileSettings>
