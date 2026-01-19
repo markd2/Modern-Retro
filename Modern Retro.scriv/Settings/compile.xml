@@ -15,7 +15,7 @@
             <RemoveTrailingWhitespace>Yes</RemoveTrailingWhitespace>
             <ConvertTablesAndListToMMD>Yes</ConvertTablesAndListToMMD>
             <PDF>
-                <Cover Bleed="9.0" BleedUnits="pt"/>
+                <Cover Source="FrontMatter" Bleed="9.0" BleedUnits="pt"/>
                 <Compression Enabled="No">
                     <ImageResolutionCompressionType>Set</ImageResolutionCompressionType>
                     <ImageResolution>150</ImageResolution>
@@ -69,8 +69,13 @@
         <Format ID="192100CE-886D-4910-8172-43CCC81B09A6">
             <SectionLayouts>
                 <Type ID="B705378A-C1FD-408B-A090-9262270A325F">NEW-PAGE-HEADER-WITH-TEXT</Type>
+                <Type ID="945B7439-CAB3-40C3-B095-4105A173990D">AS-IS</Type>
+                <Type ID="16BE4305-BEBE-49D1-9DDC-71EE056C2BF4">AS-IS</Type>
                 <Type ID="76E56BF1-7717-4ED5-BC67-FFA2BB248CD5">TEXT-SECTION</Type>
             </SectionLayouts>
+            <FrontAndBackMatter>
+                <DefaultFrontMatter Add="Yes">D6BF5C23-A4C7-4470-959D-A25B493A4F16</DefaultFrontMatter>
+            </FrontAndBackMatter>
         </Format>
         <Format ID="3BFD9E68-6034-45C9-9380-B608D7DCF7D3">
             <SectionLayouts>

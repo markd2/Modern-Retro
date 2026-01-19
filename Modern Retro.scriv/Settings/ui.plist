@@ -6,6 +6,8 @@
 	<string>/Users/markd/Desktop</string>
 	<key>NotesScaleFactor</key>
 	<real>1</real>
+	<key>SuppressBookmarksFolderCheck</key>
+	<false/>
 	<key>binderSplitFrames</key>
 	<array>
 		<string>{{0, 0}, {265, 906}}</string>
@@ -19,6 +21,16 @@
 			<integer>-1</integer>
 		</dict>
 		<key>192F7B76-FB6B-421F-AFE0-64382254CB06</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>1C528688-EA0A-47C4-B322-EF5D0AABACC5</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>2202932F-A8B7-4B00-AA93-E9BBECA09B60</key>
 		<dict>
 			<key>Row</key>
 			<integer>-1</integer>
@@ -39,6 +51,11 @@
 			<integer>-1</integer>
 		</dict>
 		<key>443E71B3-99B9-474B-8E22-C77EBAAC56D5</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>46CE7133-210D-4BEC-A4B3-B6FAE06A8E2A</key>
 		<dict>
 			<key>Row</key>
 			<integer>-1</integer>
@@ -73,6 +90,11 @@
 			<key>Row</key>
 			<integer>-1</integer>
 		</dict>
+		<key>7215C885-E186-4240-ACFA-CD7B1D6F632C</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
 		<key>7B5497BA-11C3-47DF-9206-D96886461FBC</key>
 		<dict>
 			<key>Row</key>
@@ -84,6 +106,16 @@
 			<integer>-1</integer>
 		</dict>
 		<key>8A923DAD-19A5-4724-B83B-FE18F2879B24</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>93FCD41A-5598-44B7-93DD-63A65DE9435B</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>99A3F5D6-285C-4371-81CC-8A6571F543F4</key>
 		<dict>
 			<key>Row</key>
 			<integer>-1</integer>
@@ -133,6 +165,11 @@
 			<key>Row</key>
 			<integer>-1</integer>
 		</dict>
+		<key>D6BF5C23-A4C7-4470-959D-A25B493A4F16</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
 		<key>DF135008-0F2F-47C4-A2FC-F2C330002479</key>
 		<dict>
 			<key>Row</key>
@@ -144,6 +181,11 @@
 			<integer>-1</integer>
 		</dict>
 		<key>E2ED45D4-067C-451C-AFFC-B651A44D397B</key>
+		<dict>
+			<key>Row</key>
+			<integer>-1</integer>
+		</dict>
+		<key>F07F57F4-068E-4C7F-A73C-51B7101E94AB</key>
 		<dict>
 			<key>Row</key>
 			<integer>-1</integer>
@@ -188,20 +230,22 @@
 	</array>
 	<key>inspectorWidth</key>
 	<real>245</real>
+	<key>mainDocumentEditor.PDFAutoScales</key>
+	<false/>
 	<key>mainDocumentEditor.dockedQRTextSettings</key>
 	<dict>
 		<key>textScaleFactor</key>
 		<real>1</real>
 	</dict>
 	<key>mainDocumentEditor.scrollRect</key>
-	<string>{{0, 1121}, {794, 816}}</string>
+	<string>{{0, 0}, {794, 816}}</string>
 	<key>mainDocumentEditor.textEditorState</key>
 	<dict>
 		<key>textScaleFactor</key>
 		<real>1</real>
 	</dict>
 	<key>mainWindowFrame</key>
-	<string>727 193 1321 934 0 0 2048 1127 </string>
+	<string>501 193 1321 934 0 0 2048 1127 </string>
 	<key>supportingDocumentEditor.dockedQRTextSettings</key>
 	<dict>
 		<key>textScaleFactor</key>

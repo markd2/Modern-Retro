@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.5.2-17487" Device="squeakytoy2" Author="" Modified="2026-01-18 21:57:46 -0500" ModID="2C0237A9-3933-4ACD-9D4E-7CE3A92479BC">
+<ScrivenerProject Identifier="8D152ED7-0010-4EC8-8E7D-7B9DAA814AFE" Version="2.0" Creator="SCRMAC-3.5.2-17487" Device="squeakytoy2" Author="" Modified="2026-01-18 22:38:59 -0500" ModID="EF6254A0-9F18-4741-86C5-8CE7ECC8FD32">
     <Binder>
         <BinderItem UUID="EEB95526-2598-43E6-870E-29423D12B7D5" Type="DraftFolder" Created="2023-07-06 20:40:59 -0400" Modified="2025-08-31 14:43:47 -0400">
             <Title>Retro Programming for the Moderin(ish) programmer</Title>
@@ -200,6 +200,31 @@
                 </BinderItem>
             </Children>
         </BinderItem>
+        <BinderItem UUID="D6BF5C23-A4C7-4470-959D-A25B493A4F16" Type="Folder" Created="2026-01-18 22:11:09 -0500" Modified="2026-01-18 22:29:49 -0500">
+            <Title>Front Matter</Title>
+            <MetaData>
+                <SectionType>945B7439-CAB3-40C3-B095-4105A173990D</SectionType>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>0,0</TextSelection>
+            </TextSettings>
+            <Children>
+                <BinderItem UUID="2202932F-A8B7-4B00-AA93-E9BBECA09B60" Type="Image" Created="2026-01-18 22:36:47 -0500" Modified="2026-01-18 22:36:47 -0500">
+                    <Title>book-cover</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>png</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
         <BinderItem UUID="94D5FC1E-44EA-4DFB-A8B8-029A495C48DB" Type="ResearchFolder" Created="2023-07-06 20:40:59 -0400" Modified="2023-07-06 20:40:59 -0400">
             <Title>Research</Title>
             <MetaData>
@@ -276,6 +301,82 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
+                <BinderItem UUID="93FCD41A-5598-44B7-93DD-63A65DE9435B" Type="PDF" Created="2026-01-18 22:06:27 -0500" Modified="2026-01-18 22:06:27 -0500">
+                    <Title>book-cover</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>pdf</FileExtension>
+                    </MetaData>
+                    <MediaSettings>
+                        <CurrentPDFPage>0</CurrentPDFPage>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem UUID="7215C885-E186-4240-ACFA-CD7B1D6F632C" Type="Image" Created="2026-01-18 22:20:04 -0500" Modified="2026-01-18 22:20:04 -0500">
+                    <Title>book-cover</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>png</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem UUID="F07F57F4-068E-4C7F-A73C-51B7101E94AB" Type="Image" Created="2026-01-18 22:20:56 -0500" Modified="2026-01-18 22:20:56 -0500">
+                    <Title>book-cover</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>png</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem UUID="1C528688-EA0A-47C4-B322-EF5D0AABACC5" Type="Image" Created="2026-01-18 22:22:09 -0500" Modified="2026-01-18 22:22:09 -0500">
+                    <Title>book-cover</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>png</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem UUID="46CE7133-210D-4BEC-A4B3-B6FAE06A8E2A" Type="Image" Created="2026-01-18 22:23:20 -0500" Modified="2026-01-18 22:32:14 -0500">
+                    <Title>book-cover</Title>
+                    <MetaData>
+                        <SectionType>945B7439-CAB3-40C3-B095-4105A173990D</SectionType>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>png</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
+                <BinderItem UUID="99A3F5D6-285C-4371-81CC-8A6571F543F4" Type="Image" Created="2026-01-18 22:35:23 -0500" Modified="2026-01-18 22:35:23 -0500">
+                    <Title>book-cover</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <FileExtension>png</FileExtension>
+                        <ShowSynopsisImage>Yes</ShowSynopsisImage>
+                    </MetaData>
+                    <MediaSettings>
+                        <ImageScaleFactor>1.0</ImageScaleFactor>
+                        <ImageRotation>None</ImageRotation>
+                        <ImageScalesProportionally>No</ImageScalesProportionally>
+                    </MediaSettings>
+                </BinderItem>
             </Children>
         </BinderItem>
     </Binder>
@@ -290,6 +391,7 @@
     <SectionTypes>
         <TypeDefinitions>
             <Type ID="B705378A-C1FD-408B-A090-9262270A325F">Heading</Type>
+            <Type ID="945B7439-CAB3-40C3-B095-4105A173990D">Full Page Image</Type>
             <Type ID="16BE4305-BEBE-49D1-9DDC-71EE056C2BF4">Sub-Heading</Type>
             <Type ID="76E56BF1-7717-4ED5-BC67-FFA2BB248CD5">Section</Type>
         </TypeDefinitions>
@@ -334,7 +436,7 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2023-07-06 20:40:58 -0400" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" NextResetDate="2026-01-19 00:00:00 -0500" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" WritingDays="" CanWriteOnDeadlineDate="No">0</SessionTarget>
-        <PreviousSession Words="577" Characters="3437" Date="2026-01-18 21:44:56 -0500"/>
+        <PreviousSession Words="577" Characters="3437" Date="2026-01-18 22:38:47 -0500"/>
     </ProjectTargets>
     <RecentWritingHistory Date="2026-01-18 00:00:00 -0500">
         <DraftWordCount>577</DraftWordCount>

@@ -72,6 +72,13 @@ So let's dig in to organizing data in BASIC
 
 In assembly, the "pointer plus offset" addressing mode was made for creating structures.</Text>
         </Document>
+        <Document ID="93FCD41A-5598-44B7-93DD-63A65DE9435B">
+            <Title>book-cover</Title>
+            <Text>Retro Programming
+for the modern(ish)
+software developer
+mark dalrymple</Text>
+        </Document>
         <Document ID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7">
             <Title>Blurb</Title>
             <Text>Retro Programming for the Modern(ish) Software Developer
