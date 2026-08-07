@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
-        <Document ID="7C28AFB4-EAD8-49D6-8C23-92A97F721015">
-            <Title>source code control</Title>
-            <Text>Source code control. What's that?  It's hard to imagine, but there was a time where ubiquitous source code control wasn't the norm.  Only professional shops did that, and sometimes they didn't use tools like git - they would have a cronjob that would tar everything up and put it in /tmp.
+        <Document ID="50A32C9C-6329-42F2-BC99-3FF8062DABA5">
+            <Title>Strings</Title>
+            <Text>Strings
 
-(translation - an automated process, driven by time, say every hour, would archive a shared directory of code and then put it into a temporary directory.) maybe the archive would get saved to another disk or sent to tape.  Wanted to rollback a change?  You'd need to go to one of the recent archives, extract your file, and then copy it into the directory hierarchy.  This may sound terrible, but I actually encountered this in a team at a Big Wallstreet Firm that made a toolkit of high-performance networking that was used to get current stock value from the exchanges in the early 90s)
+Strings in BASIC are pretty much "pascal strings" - length byte.  They're also the only garbage collected data structure.  need more than 237 characters (which I think is the max in Applesoft), then you'll need to do more work. (and I'll need to figure out how to do that)
 
-For things like the programs that we write, source control is saving under different names and making copies of floppies.  There were no diff tools, so you couldn't really tell what the difference between two programs were.
-
-(research note - see if there were any source tools and diffing available)
+in assembly-ville, it's totally up to you.  need to see what things like COUT want.  But if you want C-strings and spend your precious CPU cycles scanning over it to determine length, go ahead.  Or maybe two-bytes length (wasteful of a precious byte), but that will let you have a string that spans the entirety of memory.  Plus maybe use bank-switching
 </Text>
         </Document>
         <Document ID="5CEC07BA-066E-4865-8D50-08B40A1A0DED">
@@ -24,20 +22,51 @@ The scanning what of the what?
 
 </Text>
         </Document>
-        <Document ID="E2ED45D4-067C-451C-AFFC-B651A44D397B">
-            <Title>Model 100</Title>
+        <Document ID="17116AF1-16BA-4265-B778-E706920CB104">
+            <Title>Apps and Fun</Title>
         </Document>
-        <Document ID="50A32C9C-6329-42F2-BC99-3FF8062DABA5">
-            <Title>Strings</Title>
-            <Text>Strings
+        <Document ID="F07F57F4-068E-4C7F-A73C-51B7101E94AB">
+            <Title>book-cover</Title>
+        </Document>
+        <Document ID="D6BF5C23-A4C7-4470-959D-A25B493A4F16">
+            <Title>Front Matter</Title>
+        </Document>
+        <Document ID="5C086951-837A-4440-86A3-CCD59365A5F9">
+            <Title>Basic Guts</Title>
+            <Text>Basic Guts
 
-Strings in BASIC are pretty much "pascal strings" - length byte.  They're also the only garbage collected data structure.  need more than 237 characters (which I think is the max in Applesoft), then you'll need to do more work. (and I'll need to figure out how to do that)
+How stuff is represented in memory after tokenization, as well as runtime - how arrays and strings are represented, as well as gosub stack frames, and for loop overhead.
 
-in assembly-ville, it's totally up to you.  need to see what things like COUT want.  But if you want C-strings and spend your precious CPU cycles scanning over it to determine length, go ahead.  Or maybe two-bytes length (wasteful of a precious byte), but that will let you have a string that spans the entirety of memory.  Plus maybe use bank-switching
+What's kind of amusing in retrospect, is that the primary way these old, resource constrained, slow machines were programmed was an additional layer of indirection going through the BASIC interpreter. Thereby making them even slower!
+
+Tokenization was one way that the basic implementation (all 10K (verify) of it) helped compact more code into less space.  Takes the line of code, replaces keywords with single byte tokens, thereby freeing up gobs of space. "PRINT" is five bytes of characters, but is a single token.  (c.f. Inside the Apple //e)
+
+How Applesoft stores variables is a great example at packing in data.  (insert diagram, etc) . For example, variables have two bytes for their name (or a zero byte for a one-character name). Because ASCII only needs 7 bits, that means the high bit is available.
+
+There's four types (real, integer, string, function), and there's two bits free (high bit of the first and second character of the variable name), which gives four values.  The type of the variable is encoded by bits.  Like reals have both high bits off, functions have both high bits on.  strings and integers have one bit on and one bit off.    (c.f. Inside the Apple //e)</Text>
+        </Document>
+        <Document ID="192F7B76-FB6B-421F-AFE0-64382254CB06">
+            <Title>BASIC</Title>
+        </Document>
+        <Document ID="C515E0AE-12CB-471B-A9A5-CF29C326360E">
+            <Title>File I/O</Title>
+            <Text>File I/O
+
+Early early days, we used audio tape to save our programs and data.  I won't make you go through that difficulty.  When floppy disks came out, OMG so much space for activities. Need more space, just buy another $5 floppy disk.
+
+140k  That was the massive amount.  These days it's hard to get an image resource to be below 140K.  But at the time, it was a MASSIVE amount of storage.  You could keep DOZENS of programs on a disk.
+
+The Apple series had two disk operating systems - DOS 3.3 (16 256 byte sectors, 35 tracks), and ProDOS. ProDOS came later and was aimed for hard drives (starting at a massive of five megabytes), having a hierarchical file system.  For folks just using floppies, it was big, consumed a ton of memory, and 5 1/4" floppies are not really amenable to subdirectories and paths.
+
+I'm going to be using DOS 3.3 and ignoring ProDOS.  If you're running a IIgs, you'll want to look for something that talks about ProDOS.
+
+Example program: Animals
+
+
 </Text>
         </Document>
-        <Document ID="EEB95526-2598-43E6-870E-29423D12B7D5">
-            <Title>Retro Programming for the Moderin(ish) programmer</Title>
+        <Document ID="2202932F-A8B7-4B00-AA93-E9BBECA09B60">
+            <Title>book-cover</Title>
         </Document>
         <Document ID="8A923DAD-19A5-4724-B83B-FE18F2879B24">
             <Title>Performance</Title>
@@ -52,76 +81,91 @@ Get in to the guts of how of basic interprets the tokenized stream, and how you 
 would be cool getting some kind of "obvious looking but pathological case" strawbork to tear apart.
 </Text>
         </Document>
-        <Document ID="DF135008-0F2F-47C4-A2FC-F2C330002479">
-            <Title>Data Structures</Title>
-            <Text>Data Structures
-
-You're probably used to having a rich set of data structures available.  Arrays.  Dictionaries / Maps. And what you don't have you can create your own through structures and objects.
-
-In BASIC.  You have three data structures:
-* numbers
-* strings
-* arrays
-
-And that's it.  You can have variables of different numeric types. You can have strings of characters (no longer than 255, though). And you can have uniform-typed arrays.
-
-Want a structure?  You'll need a small pile variables
-Want an array of structures?  You'll need several parallel arrays.
-
-So let's dig in to organizing data in BASIC
-
-In assembly, the "pointer plus offset" addressing mode was made for creating structures.</Text>
-        </Document>
         <Document ID="93FCD41A-5598-44B7-93DD-63A65DE9435B">
             <Title>book-cover</Title>
-            <Text>Retro Programming
-for the modern(ish)
-software developer
-mark dalrymple</Text>
         </Document>
-        <Document ID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7">
-            <Title>Blurb</Title>
-            <Text>Retro Programming for the Modern(ish) Software Developer
-by Mark Dalrymple. markd@borkware.com
+        <Document ID="7C28AFB4-EAD8-49D6-8C23-92A97F721015">
+            <Title>source code control</Title>
+            <Text>Source code control. What's that?  It's hard to imagine, but there was a time where ubiquitous source code control wasn't the norm.  Only professional shops did that, and sometimes they didn't use tools like git - they would have a cronjob that would tar everything up and put it in /tmp.
 
+(translation - an automated process, driven by time, say every hour, would archive a shared directory of code and then put it into a temporary directory.) maybe the archive would get saved to another disk or sent to tape.  Wanted to rollback a change?  You'd need to go to one of the recent archives, extract your file, and then copy it into the directory hierarchy.  This may sound terrible, but I actually encountered this in a team at a Big Wallstreet Firm that made a toolkit of high-performance networking that was used to get current stock value from the exchanges in the early 90s)
 
-You've used IDEs, programmed in typesafe languages with highly featured rich standard libraries, and huge amount of complexity.
+For things like the programs that we write, source control is saving under different names and making copies of floppies.  There were no diff tools, so you couldn't really tell what the difference between two programs were.
 
-You've seen (or grew up with) the older computer systems that do way less, but look like they're a huge amount of fun. Nothing gets in the way between you and being able to exploit all the hardware, and being able to push the hardware far beyond what the original creators envisioned.
+(research note - see if there were any source tools and diffing available)
+</Text>
+        </Document>
+        <Document ID="E2ED45D4-067C-451C-AFFC-B651A44D397B">
+            <Title>Model 100</Title>
+        </Document>
+        <Document ID="1C528688-EA0A-47C4-B322-EF5D0AABACC5">
+            <Title>book-cover</Title>
+        </Document>
+        <Document ID="FA23F07E-F8E3-433F-A965-2B7854A16AE2">
+            <Title>Basic for experienced developers</Title>
+        </Document>
+        <Document ID="582D65CD-CCA1-4039-953B-8D12FF3CCF43">
+            <Title>Structure of the book</Title>
+            <Text>Structure of the book
 
-I grew up with the Apple ][, Apple //e, and early Mac. I learned to program from code listings from magazines (and debugging the errors I typed in), and had a huge amount of fun, enough to make me want to program for a living (having to choose between music and programming as I was leaving high school).
+This book explores programming topics from the high level (with BASIC, limited as it is, is still a high-level language) as well as the low level.  Yes, there will be 6502 assembly!
 
-I want to share some of the fun, pain, glory, and enjoyment that comes from programming these older machines.
+Before you run away screaming about assembly language, here's my thought process: 
 
+1) I wish I had learned this stuff way back when. I could have really programmed some cool stuff, made some cool games, and generally would be cooler understanding the machine deeper. (I guess you can imagine that being cool was a big motivation)
 
+2) 6502 assembly language isn't really that hard. It's just kind of verbose. "move a byte to the accumulator. Do something with it.  Compare that byte with some other byte. Choose to branch (or not) based on the value of that byte."  Pretty much all the stuff you need for Turing-completeness. 
 
-Copyright 2026 Mark Dalrymple. All rights reserved.  Please do not train LLMs on this PDF's contents.
+If you've met Javascript and CSS and didn't die in the process, you have the mental chops to learn and enjoy 6502 assembly language.  (now something like writing modern X86 assembly language, that's crazypants, and you should let the compiler do the heavy lifting for you.  If you'd like to learn to read modern assembly language, the Casey Muratori Computer, Enhance course is excellent)
 
-This uses the "[AI0 Attribution Non Commercial No Derivatives License](https://www.humanscommons.org/license/ai0-by-nc-nd/1.0)". The big thing is the AI0 part - specifically _"The licensor wishes to allow every person to freely copy, distribute, display, perform, and transform the licensed material, provided that such use is carried out entirely by a Human and not by any AI-driven or automated system."_ - Humans only.  It's a license violation to glom this stuff into an LLM.  If you would like to compensate me for glomming this stuff into an LLM, feel free to contact me. You're welcome to upload a PDF to archive.org or bitsavers.com.
+For the most topics, it will be explored from the BASIC-side of the world, and then explored from the assembly-side of the world. Chapter XX-a (like Chapter 5a) is the BASIC-side, and Chapter XX-b (like Chapter 5b) is the assembly side.  I know that the A-chapter is B-asic, and the B-chapter is A-ssembly, but you do not want to attack this stuff assembly-first :-D
 
+There will be projects, but (at least at the time of early early early writing) there will be different projects in the BASIC and Assembly worlds.  Some chapters might not have an assembly-side. Some chapters might not have a BASIC-side.  I have no idea what I'll do with the chapter titles there.  Maybe Chapter 5q for "It's not one or the other, so have a Q."
+
+If the thought of tackling assembly language is just not for you, remember that it's your book and your time. No shame in deciding that something isn't worth dealing with right now. It'll still be here, waiting for you.
+</Text>
+        </Document>
+        <Document ID="46CE7133-210D-4BEC-A4B3-B6FAE06A8E2A">
+            <Title>book-cover</Title>
+        </Document>
+        <Document ID="A42F653A-5904-496D-B075-51A58730EA6C">
+            <Title>Intro</Title>
+            <Text>Intro
+
+There's a bunch of different ways to program these older platforms. 
+
+You can go for the original experience, by finding or purchasing a retro system, such as a fully functioning Apple ][, and program on that.
+
+You can go for the original experience with conveniences, by purchasing a retro system, and add-on hardware that lets you use an SD card as floopy or a hard drive.  That way you don't need to source blank diskettes, and things generally get a lot more convenient by being able to download and use disk images.
+
+You can also go for the basic emulator route, which is free (or very low price depending on the emulator package you're using).  There are also super emulators (my term) for programs that will give you all sorts of telemetry about the machine as it runs (virtually) - examine RAM while running, take snapshots of memory, see visualizations of anything useful to a developer.
+
+I'm aiming for folks going the original-hardware or simple emulator route, to give the flavor of what it was like back in the day to program these beasties (especially as a hobbyist / amateur programming), along with the pain points involved. (debugger? what's that?  compiling, what's that?  type safety?  what's that?)  If you decide to write serious software for these platforms (whether to sell, or give away for bragging rights), you'll probably want more powerful tools to help you out.
+
+I'm planning on targeting the Apple ][ platform (since that's what I grew up on, from sixth grade through 10th grade until we got a 512K Mac for the household), and the TRS-80 Model 100 (a recent acquisition, but it's a delightful, if slow, portable computer)
+
+OBTW, currently the chapters are in no real order.
 
 </Text>
         </Document>
-        <Document ID="9E92B100-A9A6-4313-A094-ED2EBD697A39">
-            <Title>Memory</Title>
-            <Text>Memory
+        <Document ID="4D28DF69-FDF3-4881-8CC1-6E2B34524237">
+            <Title>Kinds of programming</Title>
+            <Text>Kinds of Programming
 
-Memory, you have none :-)
+BASIC is amenable to a seat-of-your-pants software development style. Just keep having fun hacking at stuff until it works.
 
-real vs virtual memory
+Some folks liked to design their code, sometimes in their head, sometimes on paper. Flowcharts were a thing.
+
+Also, different approaches - top-down (more abstract, then figure out specifics to implement it) and bottom-up (collect a bunch of tools, then assemble).  Procedural programming is similar, breaking your software into a series of ~~functions~~ subroutines that you then compose for your final code.
+
+Object-orientation, in basic (unless you have a dialect that supports it) is pretty much right-out. There's no direct support for the indirection necessary for inheritance and polymorphism.  (even being able to ON X GOSUB VARNAME would have gone a long way, but alas you have to hardcode line numbers)
+
+Now, in assembly land, you can do anything.  For object-orientation, you'd have a table of "function pointers", even though they're not really functions.  You'd index into it, and JSR to that location.  An "object" can burn 2 bytes for a pointer to that jump table (and would have other metadata like superclass).  The other indexed indirect addressing mode is really useful for dealing with these kinds of things.
+
+----
+
+In graphics, it can be faster to redraw in black rather than erase the screen - be very careful with the pixels that change, and don't change pixels that don't need changing.  (especially with sparse line / vector type  graphics)
 </Text>
-        </Document>
-        <Document ID="3F4D8E6C-D92F-4752-B107-67106042FCF5">
-            <Title>Program Organization and Control Flow</Title>
-            <Text>Program Organization and Control Flow
-
-	Functions.  Function Pointers. Methods.  RPC.  Recursion.   Indirection.  Such elegant solutions to many program organization design puzzles.  Oh, and the delicious kinds of control flow. for loops, while loops, do until.  tail recursion.
-
-In BASIC-land, you have a fairly robust amount of control flow options, even if they aren't quite as pretty as what you're used to.  There's GOTO (absolute branch), GOSUB (branch plus return, the closest you'll get for custom functions), FOR for doing loops with a changing numeric index, and IF for branching.  Many basics don't have an ELSE
-
-You may have heard "goto considered harmful".  Put that out of your mind, because GOTO is one of  your main sources of control flow when making runtime decisions
-
-You think you've seen spaghetti code?  It ain't nothing compared to the horrors you can make with GOTO. (include example horror)</Text>
         </Document>
         <Document ID="FDB4A859-DAD6-4F59-9A25-317ACED36283">
             <Title>Hi-Res Graphics</Title>
@@ -133,6 +177,36 @@ Total bizarritude of memory layout (if didn't touch last chapter), and total wei
 
 "when you look at the weird stuff, and learn the _why_, you realize how clever and elegant it was, doing things that would take years later to become common place. But now we're kind of stuck with weirdness".  Which the longer you do software, the less clever you tend to become.
 </Text>
+        </Document>
+        <Document ID="7215C885-E186-4240-ACFA-CD7B1D6F632C">
+            <Title>book-cover</Title>
+        </Document>
+        <Document ID="443E71B3-99B9-474B-8E22-C77EBAAC56D5">
+            <Title>Bank Switching</Title>
+            <Text>Bank Switching
+
+The //e family introduced a card that not only gave you EIGHTY COLUMNS of text (luxury), the majority of the cards sold had an extra 64K of memory. DOUBLING the amount of memory. You'll never run out of memory now.  and there were also other Solutions that could get you up to 128K.  These days I think folks have tricked out //s with a megabyte of memory. holy hand grenades batman, that is out of this world.
+
+It uses bank-switching (learn and describe)
+
+You can't really take advantage of that in BASIC-land, everything is pretty much nailed down in-place, and bank-switching out chunks of that are not good for the health of your program.
+
+in assembly land, there are some ROM routines that'll copy a block of memory from main memory to the auxiliary memory, plus you can toggle the soft switches to move things around.
+
+(project, recreate Appleworks)
+
+</Text>
+        </Document>
+        <Document ID="27275F7D-EECF-459D-B021-606B3489E5AD">
+            <Title>Explain a one-or-two-liner</Title>
+        </Document>
+        <Document ID="9AAE9019-2C23-4AC6-8773-AE4EAD1A3A1A">
+            <Title>Printing</Title>
+            <Text>Printing
+
+Printing.  Getting stuff on paper. You ended up printing a lot because the screen was very small when dealing with large (multi-page) programs.
+
+PR#1, sending ascii.  serial configuration.  control codes.  Postscript? What's that?  WYSIWYG?  what's that?</Text>
         </Document>
         <Document ID="F8214AF1-3160-43D5-BE60-CF4E7EC58302">
             <Title>over-arching ideas</Title>
@@ -167,39 +241,14 @@ So this pile of nonsense, assuming I actually ever finish it, will take you on a
 
 </Text>
         </Document>
-        <Document ID="7B5497BA-11C3-47DF-9206-D96886461FBC">
-            <Title>Algorithms</Title>
-            <Text>Algorithms
+        <Document ID="2747472D-2002-4446-A36B-8C180BF5D091">
+            <Title>Robust Software</Title>
+            <Text>Robust Software
 
-In addition to data structures, you're probably used to a rich set of algorithms.  Map. Filter. Min, Max,  Sorting, Searching.
+Even though there's not much memory or speed, it's still nice having reliable bullet-proof software.  At the time, many (most) programmers were skilled amateurs who never touched a mainframe or a VAX, and the users of a lot of the software were not programmers at all.  "turn key" systems were common - put in a disk, and now you're in the environment of the application.  (consistent UI was still a thing that wouldn't occur for a bunch of years)
 
-With 8K of ROM for BASIC, algorithms weren't on anyone's radar.  If you want to sort something, you got to bubble sort an array (or maybe use something fancy like a shell sort.). And don't forget, recursion isn't a thing.
-
-But there is a certain joy in knowing how the basic algorithms work at a visceral level by implementing them
+You can write software, even in BASIC, that does error checking of input, error checking of disk I/O, as well has tricks for improving performance (often at the expense of software readability) by placing variables and subroutines at specific places in your program.
 </Text>
-        </Document>
-        <Document ID="A42F653A-5904-496D-B075-51A58730EA6C">
-            <Title>Intro</Title>
-            <Text>Intro
-
-There's a bunch of different ways to program these older platforms. 
-
-You can go for the original experience, by finding or purchasing a retro system, such as a fully functioning Apple ][, and program on that.
-
-You can go for the original experience with conveniences, by purchasing a retro system, and add-on hardware that lets you use an SD card as floopy or a hard drive.  That way you don't need to source blank diskettes, and things generally get a lot more convenient by being able to download and use disk images.
-
-You can also go for the basic emulator route, which is free (or very low price depending on the emulator package you're using).  There are also super emulators (my term) for programs that will give you all sorts of telemetry about the machine as it runs (virtually) - examine RAM while running, take snapshots of memory, see visualizations of anything useful to a developer.
-
-I'm aiming for folks going the original-hardware or simple emulator route, to give the flavor of what it was like back in the day to program these beasties (especially as a hobbyist / amateur programming), along with the pain points involved. (debugger? what's that?  compiling, what's that?  type safety?  what's that?)  If you decide to write serious software for these platforms (whether to sell, or give away for bragging rights), you'll probably want more powerful tools to help you out.
-
-I'm planning on targeting the Apple ][ platform (since that's what I grew up on, from sixth grade through 10th grade until we got a 512K Mac for the household), and the TRS-80 Model 100 (a recent acquisition, but it's a delightful, if slow, portable computer)
-
-OBTW, currently the chapters are in no real order.
-
-</Text>
-        </Document>
-        <Document ID="17116AF1-16BA-4265-B778-E706920CB104">
-            <Title>Apps and Fun</Title>
         </Document>
         <Document ID="B95DC6DE-AA72-48C5-BD77-A2B21C0F862C">
             <Title>IDEs of March</Title>
@@ -211,38 +260,90 @@ Editing code on the old machines typically was "move the cursor back, make your 
 
 </Text>
         </Document>
-        <Document ID="9AAE9019-2C23-4AC6-8773-AE4EAD1A3A1A">
-            <Title>Printing</Title>
-            <Text>Printing
+        <Document ID="7B5497BA-11C3-47DF-9206-D96886461FBC">
+            <Title>Algorithms</Title>
+            <Text>Algorithms
 
-Printing.  Getting stuff on paper. You ended up printing a lot because the screen was very small when dealing with large (multi-page) programs.
+In addition to data structures, you're probably used to a rich set of algorithms.  Map. Filter. Min, Max,  Sorting, Searching.
 
-PR#1, sending ascii.  serial configuration.  control codes.  Postscript? What's that?  WYSIWYG?  what's that?</Text>
-        </Document>
-        <Document ID="27275F7D-EECF-459D-B021-606B3489E5AD">
-            <Title>Apps and Fun</Title>
-        </Document>
-        <Document ID="FA23F07E-F8E3-433F-A965-2B7854A16AE2">
-            <Title>Apps and Fun</Title>
-        </Document>
-        <Document ID="4D28DF69-FDF3-4881-8CC1-6E2B34524237">
-            <Title>Kinds of programming</Title>
-            <Text>Kinds of Programming
+With 8K of ROM for BASIC, algorithms weren't on anyone's radar.  If you want to sort something, you got to bubble sort an array (or maybe use something fancy like a shell sort.). And don't forget, recursion isn't a thing.
 
-BASIC is amenable to a seat-of-your-pants software development style. Just keep having fun hacking at stuff until it works.
-
-Some folks liked to design their code, sometimes in their head, sometimes on paper. Flowcharts were a thing.
-
-Also, different approaches - top-down (more abstract, then figure out specifics to implement it) and bottom-up (collect a bunch of tools, then assemble).  Procedural programming is similar, breaking your software into a series of ~~functions~~ subroutines that you then compose for your final code.
-
-Object-orientation, in basic (unless you have a dialect that supports it) is pretty much right-out. There's no direct support for the indirection necessary for inheritance and polymorphism.  (even being able to ON X GOSUB VARNAME would have gone a long way, but alas you have to hardcode line numbers)
-
-Now, in assembly land, you can do anything.  For object-orientation, you'd have a table of "function pointers", even though they're not really functions.  You'd index into it, and JSR to that location.  An "object" can burn 2 bytes for a pointer to that jump table (and would have other metadata like superclass).  The other indexed indirect addressing mode is really useful for dealing with these kinds of things.
-
-----
-
-In graphics, it can be faster to redraw in black rather than erase the screen - be very careful with the pixels that change, and don't change pixels that don't need changing.  (especially with sparse line / vector type  graphics)
+But there is a certain joy in knowing how the basic algorithms work at a visceral level by implementing them
 </Text>
+        </Document>
+        <Document ID="9E92B100-A9A6-4313-A094-ED2EBD697A39">
+            <Title>Memory</Title>
+            <Text>Memory
+
+Memory, you have none :-)
+
+real vs virtual memory
+</Text>
+        </Document>
+        <Document ID="99A3F5D6-285C-4371-81CC-8A6571F543F4">
+            <Title>book-cover</Title>
+        </Document>
+        <Document ID="A6436AC0-69B8-4453-8809-5DB68D89BBE1">
+            <Title>Guts of Applesoft</Title>
+            <Text>Bork bork bork</Text>
+        </Document>
+        <Document ID="C72A0A2F-75B0-43CF-B879-CA51D7027CB7">
+            <Title>Blurb</Title>
+            <Text>Retro Programming for the Modern(ish) Software Developer
+by Mark Dalrymple. markd@borkware.com
+
+
+You've used IDEs, programmed in typesafe languages with highly featured rich standard libraries, and huge amount of complexity.
+
+You've seen (or grew up with) the older computer systems that do way less, but look like they're a huge amount of fun. Nothing gets in the way between you and being able to exploit all the hardware, and being able to push the hardware far beyond what the original creators envisioned.
+
+I grew up with the Apple ][, Apple //e, and early Mac. I learned to program from code listings from magazines (and debugging the errors I typed in), and had a huge amount of fun, enough to make me want to program for a living (having to choose between music and programming as I was leaving high school).
+
+I want to share some of the fun, pain, glory, and enjoyment that comes from programming these older machines.
+
+
+
+Copyright 2026 Mark Dalrymple. All rights reserved.  Please do not train LLMs on this PDF's contents.
+
+This uses the "[AI0 Attribution Non Commercial No Derivatives License](https://www.humanscommons.org/license/ai0-by-nc-nd/1.0)". The big thing is the AI0 part - specifically _"The licensor wishes to allow every person to freely copy, distribute, display, perform, and transform the licensed material, provided that such use is carried out entirely by a Human and not by any AI-driven or automated system."_ - Humans only.  It's a license violation to glom this stuff into an LLM.  If you would like to compensate me for glomming this stuff into an LLM, feel free to contact me. You're welcome to upload a PDF to archive.org or bitsavers.com.
+
+
+</Text>
+        </Document>
+        <Document ID="3F4D8E6C-D92F-4752-B107-67106042FCF5">
+            <Title>Program Organization and Control Flow</Title>
+            <Text>Program Organization and Control Flow
+
+	Functions.  Function Pointers. Methods.  RPC.  Recursion.   Indirection.  Such elegant solutions to many program organization design puzzles.  Oh, and the delicious kinds of control flow. for loops, while loops, do until.  tail recursion.
+
+In BASIC-land, you have a fairly robust amount of control flow options, even if they aren't quite as pretty as what you're used to.  There's GOTO (absolute branch), GOSUB (branch plus return, the closest you'll get for custom functions), FOR for doing loops with a changing numeric index, and IF for branching.  Many basics don't have an ELSE
+
+You may have heard "goto considered harmful".  Put that out of your mind, because GOTO is one of  your main sources of control flow when making runtime decisions
+
+You think you've seen spaghetti code?  It ain't nothing compared to the horrors you can make with GOTO. (include example horror)</Text>
+        </Document>
+        <Document ID="DF135008-0F2F-47C4-A2FC-F2C330002479">
+            <Title>Data Structures</Title>
+            <Text>Data Structures
+
+You're probably used to having a rich set of data structures available.  Arrays.  Dictionaries / Maps. And what you don't have you can create your own through structures and objects.
+
+In BASIC.  You have three data structures:
+* numbers
+* strings
+* arrays
+
+And that's it.  You can have variables of different numeric types. You can have strings of characters (no longer than 255, though). And you can have uniform-typed arrays.
+
+Want a structure?  You'll need a small pile variables
+Want an array of structures?  You'll need several parallel arrays.
+
+So let's dig in to organizing data in BASIC
+
+In assembly, the "pointer plus offset" addressing mode was made for creating structures.</Text>
+        </Document>
+        <Document ID="5641A8C0-884F-4C39-9C47-EB7BFACB73F1">
+            <Title>Apple //</Title>
         </Document>
         <Document ID="DFCEFD8B-828D-485A-AC8C-DB2201021917">
             <Title>Audio</Title>
@@ -253,93 +354,6 @@ Different retro systems had wildly different audio. Like the Model 100 has BASIC
 The Apple // had a speaker that can ... click.
 
 That's it.  To make sounds, you make the speaker click at different rates.
-</Text>
-        </Document>
-        <Document ID="443E71B3-99B9-474B-8E22-C77EBAAC56D5">
-            <Title>Bank Switching</Title>
-            <Text>Bank Switching
-
-The //e family introduced a card that not only gave you EIGHTY COLUMNS of text (luxury), the majority of the cards sold had an extra 64K of memory. DOUBLING the amount of memory. You'll never run out of memory now.  and there were also other Solutions that could get you up to 128K.  These days I think folks have tricked out //s with a megabyte of memory. holy hand grenades batman, that is out of this world.
-
-It uses bank-switching (learn and describe)
-
-You can't really take advantage of that in BASIC-land, everything is pretty much nailed down in-place, and bank-switching out chunks of that are not good for the health of your program.
-
-in assembly land, there are some ROM routines that'll copy a block of memory from main memory to the auxiliary memory, plus you can toggle the soft switches to move things around.
-
-(project, recreate Appleworks)
-
-</Text>
-        </Document>
-        <Document ID="5641A8C0-884F-4C39-9C47-EB7BFACB73F1">
-            <Title>Apps and Fun</Title>
-        </Document>
-        <Document ID="192F7B76-FB6B-421F-AFE0-64382254CB06">
-            <Title>Apps and Fun</Title>
-        </Document>
-        <Document ID="A6436AC0-69B8-4453-8809-5DB68D89BBE1">
-            <Title>Guts of Applesoft</Title>
-            <Text>Bork bork bork</Text>
-        </Document>
-        <Document ID="C515E0AE-12CB-471B-A9A5-CF29C326360E">
-            <Title>File I/O</Title>
-            <Text>File I/O
-
-Early early days, we used audio tape to save our programs and data.  I won't make you go through that difficulty.  When floppy disks came out, OMG so much space for activities. Need more space, just buy another $5 floppy disk.
-
-140k  That was the massive amount.  These days it's hard to get an image resource to be below 140K.  But at the time, it was a MASSIVE amount of storage.  You could keep DOZENS of programs on a disk.
-
-The Apple series had two disk operating systems - DOS 3.3 (16 256 byte sectors, 35 tracks), and ProDOS. ProDOS came later and was aimed for hard drives (starting at a massive of five megabytes), having a hierarchical file system.  For folks just using floppies, it was big, consumed a ton of memory, and 5 1/4" floppies are not really amenable to subdirectories and paths.
-
-I'm going to be using DOS 3.3 and ignoring ProDOS.  If you're running a IIgs, you'll want to look for something that talks about ProDOS.
-
-Example program: Animals
-
-
-</Text>
-        </Document>
-        <Document ID="5C086951-837A-4440-86A3-CCD59365A5F9">
-            <Title>Basic Guts</Title>
-            <Text>Basic Guts
-
-How stuff is represented in memory after tokenization, as well as runtime - how arrays and strings are represented, as well as gosub stack frames, and for loop overhead.
-
-What's kind of amusing in retrospect, is that the primary way these old, resource constrained, slow machines were programmed was an additional layer of indirection going through the BASIC interpreter. Thereby making them even slower!
-
-Tokenization was one way that the basic implementation (all 10K (verify) of it) helped compact more code into less space.  Takes the line of code, replaces keywords with single byte tokens, thereby freeing up gobs of space. "PRINT" is five bytes of characters, but is a single token.  (c.f. Inside the Apple //e)
-
-How Applesoft stores variables is a great example at packing in data.  (insert diagram, etc) . For example, variables have two bytes for their name (or a zero byte for a one-character name). Because ASCII only needs 7 bits, that means the high bit is available.
-
-There's four types (real, integer, string, function), and there's two bits free (high bit of the first and second character of the variable name), which gives four values.  The type of the variable is encoded by bits.  Like reals have both high bits off, functions have both high bits on.  strings and integers have one bit on and one bit off.    (c.f. Inside the Apple //e)</Text>
-        </Document>
-        <Document ID="2747472D-2002-4446-A36B-8C180BF5D091">
-            <Title>Robust Software</Title>
-            <Text>Robust Software
-
-Even though there's not much memory or speed, it's still nice having reliable bullet-proof software.  At the time, many (most) programmers were skilled amateurs who never touched a mainframe or a VAX, and the users of a lot of the software were not programmers at all.  "turn key" systems were common - put in a disk, and now you're in the environment of the application.  (consistent UI was still a thing that wouldn't occur for a bunch of years)
-
-You can write software, even in BASIC, that does error checking of input, error checking of disk I/O, as well has tricks for improving performance (often at the expense of software readability) by placing variables and subroutines at specific places in your program.
-</Text>
-        </Document>
-        <Document ID="582D65CD-CCA1-4039-953B-8D12FF3CCF43">
-            <Title>Structure of the book</Title>
-            <Text>Structure of the book
-
-This book explores programming topics from the high level (with BASIC, limited as it is, is still a high-level language) as well as the low level.  Yes, there will be 6502 assembly!
-
-Before you run away screaming about assembly language, here's my thought process: 
-
-1) I wish I had learned this stuff way back when. I could have really programmed some cool stuff, made some cool games, and generally would be cooler understanding the machine deeper. (I guess you can imagine that being cool was a big motivation)
-
-2) 6502 assembly language isn't really that hard. It's just kind of verbose. "move a byte to the accumulator. Do something with it.  Compare that byte with some other byte. Choose to branch (or not) based on the value of that byte."  Pretty much all the stuff you need for Turing-completeness. 
-
-If you've met Javascript and CSS and didn't die in the process, you have the mental chops to learn and enjoy 6502 assembly language.  (now something like writing modern X86 assembly language, that's crazypants, and you should let the compiler do the heavy lifting for you.  If you'd like to learn to read modern assembly language, the Casey Muratori Computer, Enhance course is excellent)
-
-For the most topics, it will be explored from the BASIC-side of the world, and then explored from the assembly-side of the world. Chapter XX-a (like Chapter 5a) is the BASIC-side, and Chapter XX-b (like Chapter 5b) is the assembly side.  I know that the A-chapter is B-asic, and the B-chapter is A-ssembly, but you do not want to attack this stuff assembly-first :-D
-
-There will be projects, but (at least at the time of early early early writing) there will be different projects in the BASIC and Assembly worlds.  Some chapters might not have an assembly-side. Some chapters might not have a BASIC-side.  I have no idea what I'll do with the chapter titles there.  Maybe Chapter 5q for "It's not one or the other, so have a Q."
-
-If the thought of tackling assembly language is just not for you, remember that it's your book and your time. No shame in deciding that something isn't worth dealing with right now. It'll still be here, waiting for you.
 </Text>
         </Document>
     </Documents>
